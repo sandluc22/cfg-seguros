@@ -18,12 +18,13 @@
 
 ## DNS (Cloudflare)
 - **Nameservers:** chase.ns.cloudflare.com / sima.ns.cloudflare.com
-- **CNAME @:** cfg-seguros-web.pages.dev (Proxied)
+- **CNAME @:** cfg-seguros-web.pages.dev (Proxied, Orange cloud)
 - **CNAME www:** cfg-seguros-web.pages.dev (Proxied)
 - **MX 10:** aspmx1.migadu.com
 - **MX 20:** aspmx2.migadu.com
 - **TXT @:** hosted-email-verify=cpnvofqk
 - **TXT @:** v=spf1 include:spf.migadu.com -all
+- **TXT @:** google-site-verification=gfTJSxDxXeL5LgwAtuKtXDCoYDrQ-8X8bDIk5lB3X4E
 - **TXT _dmarc:** v=DMARC1; p=quarantine;
 - **CNAME key1._domainkey:** key1.cfg-seguros.com._domainkey.migadu.com.
 - **CNAME key2._domainkey:** key2.cfg-seguros.com._domainkey.migadu.com.
@@ -54,10 +55,24 @@
 - **Chat ID:** 7890204626
 - **Notificaciones:** Llegan leads del formulario
 
+## Google Search Console
+- **Estado:** Verificado ✅
+- **Método:** Proveedor de nombres de dominio (TXT DNS)
+- **Sitemap:** https://cfg-seguros.com/sitemap.xml — enviado ✅
+- **URL:** https://search.google.com/search-console?resource_id=https://cfg-seguros.com/
+
+## Google Business Profile
+- **Nombre:** CFG Seguros
+- **Estado:** En revisión por Google ⏳ (~3-5 días)
+- **URL:** https://www.google.com/business/
+- **Nota:** Llegará carta/postal con código de verificación
+
 ## Estructura de la web
 ```
 cfg-seguros.com/
 ├── index.html                    — Home completo
+├── sitemap.xml                   — Mapa del sitio para Google
+├── robots.txt                    — Instrucciones para buscadores
 ├── seguros/
 │   ├── index.html                — Listado de seguros
 │   ├── vida.html                 — Seguro de Vida
@@ -76,11 +91,29 @@ cfg-seguros.com/
 
 ## Deploy (Cloudflare Pages)
 - **Método:** npx wrangler pages deploy . --project-name=cfg-seguros-web
-- **Último deploy:** https://bf71da9f.cfg-seguros-web.pages.dev
+- **Último deploy:** https://88075b0c.cfg-seguros-web.pages.dev
 - **Dominio asignado manualmente:** API Cloudflare (add domain) o dashboard
 
-## Notas
+### Notas de deploy
 - Antes del deploy: quitar dominio con API, deployar, re-asignar dominio
 - Token Cloudflare guardado en: /tmp/cf_token.txt
 - Token NO tiene permisos de Email Routing
-- Para cambiar contenido: editar archivos en /home/node/workspace/cfg-seguros/
+
+## GitHub
+- **Repo:** https://github.com/sandluc22/cfg-seguros
+- **Rama:** master
+- **Credenciales:** sandluc22 + token ghp_sl…XULv
+
+## Backup local
+- **Ruta:** /home/node/workspace/cfg-seguros/
+
+## Estado de visibilidad
+| # | Tarea | Estado |
+|---|-------|--------|
+| 1 | ✅ Web cfg-seguros.com funcionando | ✅ |
+| 2 | ✅ Formulario captando leads (info@cfg-seguros.com + Telegram) | ✅ |
+| 3 | ✅ Correos corporativos (info, ventas) en Migadu | ✅ |
+| 4 | ✅ Google Search Console — dominio verificado | ✅ |
+| 5 | ✅ Sitemap enviado a Google (12 páginas) | ✅ |
+| 6 | ⏳ Google Business Profile — en revisión | ⏳ |
+| 7 | ⏳ Google indexando la web (automático tras sitemap) | ⏳ |
