@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>CFG Seguros · Protege lo que importa</title>
+<meta name="description" content="CFG Seguros. Encuentra el seguro perfecto para ti y tu familia: Vida, Salud, Hogar, Coche, Empresas y más. Protege lo que importa.">
+<link rel="canonical" href="https://cfg-seguros.com/">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:linear-gradient(135deg,#0a1f44,#163d7a);color:#e2e8f0;min-height:100vh}
+.container{max-width:1100px;margin:0 auto;padding:0 1.5rem}
+
+/* NAVBAR */
+nav{background:rgba(10,31,68,0.95);backdrop-filter:blur(10px);padding:.8rem 0;position:sticky;top:0;z-index:100;border-bottom:2px solid rgba(255,215,0,0.15)}
+nav .container{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
+nav .logo{display:flex;align-items:center;gap:.5rem;text-decoration:none}
+nav .logo svg{height:45px;width:auto}
+.nav-links{display:flex;gap:.8rem;flex-wrap:wrap}
+.nav-links a{color:#e2e8f0;text-decoration:none;font-size:.9rem;padding:.4rem .8rem;border-radius:6px;transition:all .3s}
+.nav-links a:hover{background:rgba(255,215,0,0.15);color:#ffd700}
+
+/* HERO */
+.hero{text-align:center;padding:5rem 1.5rem 3rem}
+.hero h1{font-size:2.5rem;color:#ffd700;margin-bottom:1rem;line-height:1.2}
+.hero p{font-size:1.1rem;color:#94a3b8;max-width:600px;margin:0 auto 1.5rem;line-height:1.6}
+.hero .btn{display:inline-block;background:linear-gradient(135deg,#ffd700,#ffaa00);color:#0a1f44;padding:.8rem 2rem;border-radius:8px;text-decoration:none;font-weight:700;font-size:1rem;transition:transform .3s}
+.hero .btn:hover{transform:translateY(-2px)}
+
+/* SECCIONES */
+section{padding:3rem 1.5rem}
+.section-title{text-align:center;font-size:1.8rem;color:#ffd700;margin-bottom:2rem}
+
+/* SERVICIOS - Tarjetas */
+.servicios-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem}
+.servicio-card{background:rgba(30,41,59,0.7);backdrop-filter:blur(5px);border-radius:16px;padding:2rem;text-align:center;border:1px solid rgba(255,215,0,0.1);transition:all .4s;text-decoration:none;color:inherit;display:block}
+.servicio-card:hover{transform:translateY(-6px);border-color:#ffd700;box-shadow:0 12px 30px rgba(255,215,0,0.1)}
+.servicio-card .icon{width:64px;height:64px;background:linear-gradient(135deg,#1a3a5c,#2a5a8c);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;font-size:1.8rem}
+.servicio-card h3{color:#ffd700;margin-bottom:.5rem;font-size:1.2rem}
+.servicio-card p{color:#94a3b8;font-size:.9rem;line-height:1.5;margin:0}
+
+/* SOBRE NOSOTROS */
+.sobre{background:rgba(30,41,59,0.5);border-radius:16px;padding:2.5rem;max-width:800px;margin:0 auto}
+.sobre p{color:#94a3b8;line-height:1.8;margin-bottom:1rem}
+.sobre p:last-child{margin:0}
+
+/* BLOG PREVIEW */
+.blog-preview{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem}
+.blog-card{background:rgba(30,41,59,0.7);border-radius:12px;padding:1.5rem;border-left:4px solid #ffd700;transition:all .3s;text-decoration:none;color:inherit;display:block}
+.blog-card:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(255,215,0,0.08)}
+.blog-card h3{color:#ffd700;margin-bottom:.5rem;font-size:1rem}
+.blog-card p{color:#94a3b8;font-size:.85rem;margin-bottom:.5rem}
+.blog-card .date{color:#667eea;font-size:.75rem}
+.ver-todos{text-align:center;margin-top:2rem}
+.ver-todos a{color:#ffd700;text-decoration:none;font-weight:600}
+.ver-todos a:hover{text-decoration:underline}
+
+/* FORMULARIO */
+.form-wrap{max-width:600px;margin:0 auto;background:rgba(30,41,59,0.7);backdrop-filter:blur(5px);border-radius:16px;padding:2.5rem;border:1px solid rgba(255,215,0,0.1)}
+.form-group{margin-bottom:1.2rem}
+.form-group label{display:block;color:#94a3b8;font-size:.85rem;margin-bottom:.4rem;font-weight:600}
+.form-group input,.form-group select,.form-group textarea{width:100%;padding:.7rem .9rem;border:1px solid rgba(255,255,255,0.1);border-radius:8px;background:rgba(15,23,42,0.6);color:#e2e8f0;font-size:.9rem;transition:border .3s}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{outline:none;border-color:#ffd700}
+.form-group select option{background:#1e293b}
+.btn-submit{width:100%;padding:.8rem;background:linear-gradient(135deg,#ffd700,#ffaa00);color:#0a1f44;border:none;border-radius:8px;font-size:1rem;font-weight:700;cursor:pointer;transition:transform .3s}
+.btn-submit:hover{transform:translateY(-2px)}
+.btn-submit:disabled{opacity:.6;cursor:not-allowed;transform:none}
+
+/* FOOTER */
+footer{text-align:center;padding:2rem;color:#64748b;font-size:.85rem;border-top:1px solid rgba(255,215,0,0.08);margin-top:2rem}
+footer a{color:#667eea;text-decoration:none}
+footer a:hover{text-decoration:underline}
+footer .email{color:#ffd700;font-weight:600}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  nav .container{flex-direction:column;align-items:center}
+  .nav-links{justify-content:center}
+  .hero h1{font-size:1.8rem}
+  .section-title{font-size:1.4rem}
+}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+<div class="container">
+  <a href="/" class="logo">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 70" width="180" height="53">
+      <defs>
+        <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style="stop-color:#1a3a5c"/><stop offset="100%" style="stop-color:#0f2844"/>
+        </linearGradient>
+        <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style="stop-color:#ffd700"/><stop offset="100%" style="stop-color:#ffaa00"/>
+        </linearGradient>
+      </defs>
+      <path d="M10 8 L58 8 L68 22 L58 38 L34 54 L10 38 L2 22 Z" fill="url(#bg)" stroke="url(#gold)" stroke-width="2"/>
+      <path d="M16 16 L52 16 L59 24 L52 34 L34 45 L16 34 L10 24 Z" fill="none" stroke="url(#gold)" stroke-width="1" opacity="0.5"/>
+      <path d="M20 24 L28 34 L46 14" fill="none" stroke="url(#gold)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="82" y="33" font-family="Georgia,serif" font-size="28" font-weight="bold" fill="#e2e8f0">CFG</text>
+      <rect x="82" y="40" width="120" height="2" fill="url(#gold)" rx="1"/>
+      <text x="82" y="56" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#ffd700" letter-spacing="4">SEGUROS</text>
+    </svg>
+  </a>
+  <div class="nav-links">
+    <a href="/">Inicio</a>
+    <a href="/seguros/">Seguros</a>
+    <a href="/blog/">Blog</a>
+    <a href="/#sobre">Nosotros</a>
+    <a href="/#contacto">Contacto</a>
+  </div>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+<div class="container">
+  <h1>Protege lo que m&aacute;s importa</h1>
+  <p>En CFG Seguros te ayudamos a encontrar el seguro perfecto para ti y tu familia. Vida, Salud, Hogar, Coche, Empresas y Ahorro. Asesor&iacute;a personalizada sin compromiso.</p>
+  <a href="/seguros/" class="btn">Ver nuestros seguros →</a>
+</div>
+</section>
+
+<!-- SERVICIOS -->
+<section id="seguros">
+<div class="container">
+  <h2 class="section-title">Nuestros Seguros</h2>
+  <div class="servicios-grid">
+    <a href="/seguros/vida.html" class="servicio-card">
+      <div class="icon">❤️</div>
+      <h3>Seguro de Vida</h3>
+      <p>Protege el futuro de tu familia. Cobertura ante cualquier imprevisto con las mejores condiciones.</p>
+    </a>
+    <a href="/seguros/salud.html" class="servicio-card">
+      <div class="icon">🏥</div>
+      <h3>Seguro de Salud</h3>
+      <p>Accede a los mejores cuadros m&eacute;dicos sin esperas. Tu salud y la de los tuyos primero.</p>
+    </a>
+    <a href="/seguros/hogar.html" class="servicio-card">
+      <div class="icon">🏠</div>
+      <h3>Seguro de Hogar</h3>
+      <p>Tu hogar protegido contra todo: incendios, robos, da&ntilde;os el&eacute;ctricos y responsabilidad civil.</p>
+    </a>
+    <a href="/seguros/coche.html" class="servicio-card">
+      <div class="icon">🚗</div>
+      <h3>Seguro de Coche</h3>
+      <p>Desde terceros hasta todo riesgo. La tranquilidad al volante al mejor precio del mercado.</p>
+    </a>
+    <a href="/seguros/empresas.html" class="servicio-card">
+      <div class="icon">🏢</div>
+      <h3>Seguro de Empresas</h3>
+      <p>Protege tu negocio: responsabilidad civil, da&ntilde;os materiales, ciberriesgo y m&aacute;s.</p>
+    </a>
+    <a href="/seguros/ahorro-inversion.html" class="servicio-card">
+      <div class="icon">📈</div>
+      <h3>Ahorro e Inversi&oacute;n</h3>
+      <p>Planes de ahorro asegurados y productos de inversi&oacute;n adaptados a tus objetivos financieros.</p>
+    </a>
+  </div>
+</div>
+</section>
+
+<!-- SOBRE NOSOTROS -->
+<section id="sobre">
+<div class="container">
+  <h2 class="section-title">Sobre CFG Seguros</h2>
+  <div class="sobre">
+    <p>En <strong>CFG Seguros</strong> somos un equipo de asesores especializados con m&aacute;s de 10 a&ntilde;os de experiencia en el sector asegurador. Trabajamos con las principales aseguradoras del mercado para ofrecerte la mejor cobertura al mejor precio.</p>
+    <p>Nuestra filosof&iacute;a es clara: <strong>asesoramiento personalizado y transparente</strong>. Analizamos tus necesidades reales y te recomendamos el seguro que mejor se adapta a ti, no el que m&aacute;s comisi&oacute;n nos deja.</p>
+    <p>Creemos en la protecci&oacute;n financiera como pilar fundamental para vivir tranquilo. Por eso te acompa&ntilde;amos antes, durante y despu&eacute;s de contratar tu seguro.</p>
+  </div>
+</div>
+</section>
+
+<!-- BLOG PREVIEW -->
+<section id="blog">
+<div class="container">
+  <h2 class="section-title">Últimos artículos</h2>
+  <div class="blog-preview">
+    <a href="/blog/seguro-vida-mitos-realidades.html" class="blog-card">
+      <h3>Seguro de vida: mitos y realidades</h3>
+      <p>&#191;Realmente necesitas un seguro de vida? Desmentimos los mitos m&aacute;s comunes y te contamos por qu&eacute; es una de las mejores decisiones que puedes tomar.</p>
+      <span class="date">14 julio 2026</span>
+    </a>
+    <a href="/blog/seguro-salud-guia-completa.html" class="blog-card">
+      <h3>Gu&iacute;a completa del seguro de salud</h3>
+      <p>Todo lo que debes saber antes de contratar un seguro m&eacute;dico: coberturas, copagos, cuadros m&eacute;dicos y c&oacute;mo elegir la mejor opci&oacute;n.</p>
+      <span class="date">10 julio 2026</span>
+    </a>
+    <a href="/blog/proteccion-empresas-autonomos.html" class="blog-card">
+      <h3>Protecci&oacute;n financiera para empresas y aut&oacute;nomos</h3>
+      <p>Los riesgos que corre tu negocio si no est&aacute; asegurado correctamente. Gu&iacute;a de seguros esenciales para pymes y aut&oacute;nomos.</p>
+      <span class="date">5 julio 2026</span>
+    </a>
+  </div>
+  <div class="ver-todos"><a href="/blog/">Ver todos los artículos →</a></div>
+</div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto">
+<div class="container">
+  <h2 class="section-title">Solicita informaci&oacute;n</h2>
+  <div class="form-wrap">
+    <form id="contactForm">
+      <input type="hidden" name="access_key" value="58b165d2-318b-4718-bb6a-9b46dbb4540d">
+      <input type="hidden" name="subject" value="Nuevo lead CFG Seguros">
+      <input type="hidden" name="from_name" value="CFG Seguros">
+      <div class="form-group">
+        <label>Nombre completo *</label>
+        <input type="text" name="nombre" placeholder="Tu nombre" required>
+      </div>
+      <div class="form-group">
+        <label>Email *</label>
+        <input type="email" name="email" placeholder="tu@email.com" required>
+      </div>
+      <div class="form-group">
+        <label>Tel&eacute;fono *</label>
+        <input type="tel" name="telefono" placeholder="+34 ..." required>
+      </div>
+      <div class="form-group">
+        <label>Fecha de nacimiento</label>
+        <input type="date" name="fecha_nacimiento">
+      </div>
+      <div class="form-group">
+        <label>Seguro de inter&eacute;s *</label>
+        <select name="seguro" required>
+          <option value="">Selecciona...</option>
+          <option>Vida</option><option>Salud</option><option>Hogar</option>
+          <option>Coche</option><option>Empresas</option>
+          <option>Ahorro e Inversi&oacute;n</option><option>Otro</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Aseguradora preferida</label>
+        <select name="aseguradora_interes">
+          <option value="">Cualquiera / No lo s&eacute;</option>
+          <option>Allianz</option><option>AXA</option><option>Mapfre</option>
+          <option>Sanitas</option><option>DKV</option><option>Adeslas</option>
+          <option>Zurich</option><option>Generali</option><option>Otra</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Mensaje</label>
+        <textarea name="message" rows="4" placeholder="Cu&eacute;ntanos qu&eacute; necesitas..."></textarea>
+      </div>
+      <button type="submit" class="btn-submit">📨 Enviar consulta</button>
+    </form>
+    <div id="formOk" style="display:none;background:#065f46;color:#d1fae5;padding:1rem;border-radius:8px;text-align:center;margin-top:1rem">✓ Mensaje enviado correctamente. Nos pondremos en contacto contigo.</div>
+  </div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<div class="container">
+  <p>CFG-Seguros &copy; 2026 &mdash; <span class="email">info@cfg-seguros.com</span> &mdash; <a href="/blog/">Blog</a> &mdash; <a href="/seguros/">Seguros</a></p>
+  <p style="margin-top:.3rem;font-size:.75rem;color:#475569">Protege lo que importa &mdash; Colaborador de Grupo Galilea.</p>
+</div>
+</footer>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const btn = this.querySelector('.btn-submit');
+  const orig = btn.textContent;
+  btn.textContent = 'Enviando...';
+  btn.disabled = true;
+  const formData = new FormData(this);
+  const data = {};
+  formData.forEach((v, k) => data[k] = v);
+  let ok = false;
+  try {
+    const r = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    });
+    const j = await r.json();
+    ok = j.success;
+  } catch(e) { console.log('W3 error:', e); }
+  try {
+    const t = '766728…PFzA';
+    const msg = '*Nuevo lead CFG Seguros*\\n'
+      + '*Nombre:* ' + (data.nombre || '-') + '\\n'
+      + '*Telefono:* ' + (data.telefono || '-') + '\\n'
+      + '*Email:* ' + (data.email || '-') + '\\n'
+      + '*Seguro:* ' + (data.seguro || '-') + '\\n'
+      + '*Mensaje:* ' + (data.message || '-');
+    await fetch('https://api.telegram.org/bot' + t + '/sendMessage', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ chat_id: '7890204626', text: msg, parse_mode: 'Markdown' })
+    });
+  } catch(e2) { console.log('TG error:', e2); }
+  btn.textContent = orig;
+  btn.disabled = false;
+  if (ok) {
+    this.reset();
+    document.getElementById('formOk').style.display = 'block';
+    setTimeout(() => document.getElementById('formOk').style.display = 'none', 5000);
+  } else {
+    alert('Error al enviar. Escribenos a info@cfg-seguros.com');
+  }
+});
+</script>
+</body>
+</html>
