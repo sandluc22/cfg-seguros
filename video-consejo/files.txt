@@ -1,0 +1,16 @@
+file 'escena_00.png'
+duration 2.5
+file 'escena_01.png'
+duration 2.5
+file 'escena_02.png'
+duration 2.5
+file 'escena_03.png'
+duration 2.5
+file 'escena_04.png'
+duration 2.5
+file 'escena_05.png'
+duration 2.5
+file 'escena_06.png'
+duration 2.5
+file 'escena_06.png'
+duration 3

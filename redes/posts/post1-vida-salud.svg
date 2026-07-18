@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628"/>
+      <stop offset="50%" style="stop-color:#12264a"/>
+      <stop offset="100%" style="stop-color:#1a3a6b"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Fondo -->
+  <rect width="1080" height="1080" fill="url(#bg)"/>
+  
+  <!-- Círculos decorativos -->
+  <circle cx="200" cy="150" r="180" fill="white" opacity="0.05"/>
+  <circle cx="450" cy="330" r="180" fill="white" opacity="0.05"/>
+  <circle cx="700" cy="510" r="180" fill="white" opacity="0.05"/>
+  <circle cx="950" cy="690" r="180" fill="white" opacity="0.05"/>
+  
+  <!-- Línea decorativa arriba -->
+  <rect x="80" y="60" width="200" height="4" rx="2" fill="#2980b9"/>
+  
+  <!-- Título principal -->
+  <text x="540" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="54" fill="white">¿Seguro de Vida</text>
+  <text x="540" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="54" fill="white">o de Salud?</text>
+  <text x="540" y="390" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="30" fill="#f1c40f">Los dos, y te explico por qué</text>
+  
+  <!-- Separador -->
+  <rect x="340" y="440" width="400" height="2" fill="#2980b9"/>
+  
+  <!-- Punto 1 - Salud -->
+  <circle cx="130" cy="520" r="15" fill="#2ecc71"/>
+  <text x="180" y="540" font-family="Arial, sans-serif" font-weight="bold" font-size="40" fill="white">Seguro de Salud</text>
+  <text x="180" y="585" font-family="Arial, sans-serif" font-size="26" fill="#bdc3c7">Acceso a médicos privados, consultas, urgencias</text>
+  <text x="180" y="625" font-family="Arial, sans-serif" font-size="24" fill="#95a5a6">→ Para cuidarte hoy</text>
+  
+  <!-- Punto 2 - Vida -->
+  <circle cx="130" cy="700" r="15" fill="#3498db"/>
+  <text x="180" y="720" font-family="Arial, sans-serif" font-weight="bold" font-size="40" fill="white">Seguro de Vida</text>
+  <text x="180" y="765" font-family="Arial, sans-serif" font-size="26" fill="#bdc3c7">Protección económica para tu familia si faltas</text>
+  <text x="180" y="805" font-family="Arial, sans-serif" font-size="24" fill="#95a5a6">→ Para que los tuyos estén tranquilos mañana</text>
+  
+  <!-- Separador -->
+  <rect x="340" y="860" width="400" height="2" fill="#2980b9"/>
+  
+  <!-- CTA -->
+  <text x="540" y="930" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="32" fill="#f1c40f">Te asesoramos sin compromiso</text>
+  
+  <!-- Línea decorativa abajo -->
+  <rect x="780" y="1020" width="200" height="4" rx="2" fill="#2980b9"/>
+  
+  <!-- Pie -->
+  <text x="540" y="1058" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#7f8c8d">cfg-seguros.com · Colaborador Grupo Galilea</text>
+</svg>
