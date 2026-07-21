@@ -1,0 +1,5 @@
+# robots.txt - CFG Seguros
+User-agent: *
+Allow: /
+
+Sitemap: https://cfg-seguros.com/sitemap.xml
