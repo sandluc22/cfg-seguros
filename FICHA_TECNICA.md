@@ -4,6 +4,7 @@
 > **Eslogan:** Protege lo que importa
 > **Colores:** Azul marino (#0a1f44) + Dorado (#ffd700)
 > **Tipo:** Web corporativa de seguros
+> **Última actualización:** 23 julio 2026
 
 ---
 
@@ -17,7 +18,7 @@
 | **País** | España (Madrid) |
 | **Idioma** | Español (es) |
 | **Fecha de lanzamiento** | Julio 2026 |
-| **Estado** | Activo |
+| **Estado** | ✅ COMPLETO |
 | **Tipo** | Web corporativa + captación de leads |
 
 ---
@@ -30,90 +31,88 @@
 | **CDN** | Cloudflare (global) | ✅ Activo |
 | **SSL** | Automático Cloudflare | ✅ Activo |
 | **Repositorio** | GitHub sandluc22/cfg-seguros (master) | ✅ Conectado |
-| **Deploy** | Automático desde GitHub + manual vía API | ✅ |
+| **Deploy** | Automático desde GitHub | ✅ |
 | **Build** | Ninguno (HTML estático) | ✅ |
 
 ---
 
-## 3. ESTRUCTURA DEL SITIO
+## 3. ESTRUCTURA DEL SITIO (16 páginas)
 
-| Ruta | Páginas | Estado |
+| Ruta | Página | Estado |
 |---|---|---|
-| `/` (index) | Página principal con todas las secciones | ✅ |
+| `/` (index.html) | Página principal con hero, servicios, blog, contacto | ✅ |
 | `/seguro-vida.html` | Seguro de Vida | ✅ |
 | `/seguro-salud.html` | Seguro de Salud | ✅ |
 | `/seguro-hogar.html` | Seguro de Hogar | ✅ |
 | `/seguro-coche.html` | Seguro de Coche | ✅ |
 | `/seguro-empresas.html` | Seguros para Empresas | ✅ |
+| `/seguro-ahorro-inversion.html` | Ahorro e Inversión | ✅ |
 | `/aviso-legal.html` | Aviso Legal | ✅ |
 | `/privacidad.html` | Política de Privacidad | ✅ |
-| `/blog/` | Blog (artículos varios) | ✅ |
+| `/blog/` | Blog (4 artículos) | ✅ |
+| `/blog/seguros-de-vida.html` | ¿Necesitas seguro de vida? | ✅ |
+| `/blog/seguro-hogar.html` | Protege tu hogar | ✅ |
+| `/blog/seguro-coche.html` | El mejor seguro de coche | ✅ |
+| `/blog/seguro-salud.html` | Seguro de salud, ¿merece la pena? | ✅ |
 
 ---
 
-## 4. DISEÑO Y MARCA
+## 4. FORMULARIOS Y CAPTACIÓN
 
-| Elemento | Descripción | Estado |
+| Componente | Proveedor | Estado |
 |---|---|---|
-| **Logotipo** | CFG Seguros con tipografía personalizada | ✅ |
-| **Favicon** | Sí | ✅ |
-| **Esquema de colores** | #0a1f44 (azul oscuro), #ffd700 (dorado), #e2e8f0 (texto claro) | ✅ |
-| **Diseño** | Responsivo, full-width con tarjetas de productos | ✅ |
-| **Redes sociales** | IG, FB, LinkedIn, TikTok | ✅ |
+| **Formulario de contacto** | Web3Forms | ✅ |
+| **WhatsApp flotante** | Enlace directo wa.me | ✅ |
+| **Bot Supervende "Lucía"** | Supervende.ai | ✅ Activo |
 
 ---
 
-## 5. SEO Y VISIBILIDAD
+## 5. PRESENCIA EN REDES SOCIALES
 
-| Elemento | Estado | Notas |
+| Red | Usuario/Enlace | Estado |
 |---|---|---|
-| **Google Search Console** | ✅ Verificado | Desde el lanzamiento |
-| **Sitemap.xml** | ✅ Creado | 9 URLs, enviado a Google |
-| **Robots.txt** | ✅ Creado | Rastreo permitido |
-| **Google Analytics** | ✅ GA4 Instalado | ID G-XVVBY349WZ (mismo que CFG Global) |
-| **Open Graph** | ✅ | Vista previa al compartir |
-| **Google Business Profile** | ⏳ Pendiente carta física | Código de verificación por correo postal |
+| Instagram | @cfg_seguros_gg | ✅ |
+| Facebook | CFG Seguros | ✅ |
+| LinkedIn | cfg-seguros | ✅ |
+| TikTok | @cfgsegurosgg | ✅ |
 
 ---
 
-## 6. FUNCIONALIDADES
+## 6. SEO Y ANALÍTICA
 
-| Funcionalidad | Estado |
+| Componente | Estado |
 |---|---|
-| **Supervende (Lucía)** — chatbot IA | ✅ Activo |
-| **Formulario Web3Forms** | ✅ Funcionando |
-| **WhatsApp flotante** | ✅ |
-| **Enlaces a cfg-seguros.com desde CFG Global** | ✅ Activos |
+| Google Search Console | ✅ Verificado |
+| Google Business Profile | ⏳ En revisión (esperando carta) |
+| Meta tags (description, og) | ✅ En todas las páginas |
+| Robots.txt | ✅ |
+| Sitemap | ✅ |
 
 ---
 
-## 7. PÁGINAS LEGALES
+## 7. AUTOMATIZACIONES (CRON JOBS)
 
-| Página | URL | Estado |
+| Tarea | Horario | Estado |
 |---|---|---|
-| **Aviso Legal** | /aviso-legal.html | ✅ |
-| **Política de Privacidad** | /privacidad.html | ✅ |
+| Saludo diario | 6:30h todos los días | ✅ Activo |
+| Publicar contenido | Lun/Mié/Vie 6:30h | ✅ Activo |
+| Cierre del día | 22:30h todos los días | ✅ Activo |
 
 ---
 
 ## 8. PENDIENTES
 
-| Prioridad | Tarea | Estado |
+| Tarea | Prioridad | Estado |
 |---|---|---|
-| 🔴 | Recibir carta de Google Business Profile e introducir código | ⏳ Pendiente |
-| 🟡 | Publicar contenido en redes (lun/mié/vie) | ⏳ Pendiente |
-| 🟢 | Escribir nuevos artículos SEO para el blog | ⏳ Pendiente |
+| Google Business Profile | Media | ⏳ Esperando carta |
+| Revisar seguidores redes | Media | ⏳ Viernes 24 jul 20:00h |
+| Próximos posts | Media | ⏳ Viernes 24 jul 6:30h |
 
 ---
 
-## 9. CONTACTO
+## 9. NOTAS
 
-| Canal | Dato |
-|---|---|
-| **Email** | info@cfg-seguros.com, ventas@cfg-seguros.com |
-| **Web** | https://cfg-seguros.com |
-| **Migadu** | Correos configurados |
-
----
-
-*Ficha actualizada: 21 julio 2026*
+- Deploy automático desde GitHub. Push a master → despliegue en Cloudflare Pages
+- Supervende "Lucía" configurada para contacto automatizado
+- Sin logo propio en cabecera (usar mismo estilo CFG Global cuando se decida)
+- Diseño responsive, funcional en móvil y escritorio
