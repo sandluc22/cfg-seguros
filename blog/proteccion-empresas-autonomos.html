@@ -38,7 +38,13 @@
   .post-content .cta a:hover{color:#f0c040}
   .back-link{display:block;margin-top:2rem;color:#667eea;text-decoration:none;font-size:.9rem}
   .back-link:hover{text-decoration:underline}
-</style>
+
+    /* Cookie banner */
+    .cookie-banner{position:fixed;bottom:0;left:0;right:0;background:#0f172a;color:#fff;padding:14px 24px;z-index:9999;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px;font-size:.9rem;box-shadow:0 -4px 12px rgba(0,0,0,.15)}
+    .cookie-banner.hidden{display:none}
+    .cookie-banner a{color:#a5b4fc;text-decoration:underline}
+    .cookie-banner button{background:#667eea;color:#fff;border:none;padding:8px 20px;border-radius:6px;font-weight:700;cursor:pointer;font-size:.85rem}
+    .cookie-banner button:hover{background:#5a6fd6}</style>
 
 <style>
 .social-icon {
@@ -206,5 +212,20 @@
     <span style="font-size:12px;">&copy; 2026 CFG Seguros</span>
   </div>
 </footer>
+
+<!-- Cookie consent banner -->
+<div id="cookie-banner" class="cookie-banner">
+  <span>Usamos cookies propias y de terceros (Google Analytics) para mejorar tu experiencia. <a href="/cookies.html">Más información</a></span>
+  <button onclick="aceptarCookies()">Aceptar</button>
+</div>
+<script>
+function aceptarCookies() {
+  document.getElementById('cookie-banner').classList.add('hidden');
+  localStorage.setItem('cookies_aceptadas', 'true');
+}
+if (localStorage.getItem('cookies_aceptadas') === 'true') {
+  document.getElementById('cookie-banner').classList.add('hidden');
+}
+</script>
 </body>
 </html>
