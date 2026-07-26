@@ -1,12 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://cfg-seguros.com/</loc><priority>1.0</priority><changefreq>weekly</changefreq></url>
-  <url><loc>https://cfg-seguros.com/seguro-vida.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://cfg-seguros.com/seguro-salud.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://cfg-seguros.com/seguro-hogar.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://cfg-seguros.com/seguro-coche.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://cfg-seguros.com/seguro-empresas.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://cfg-seguros.com/aviso-legal.html</loc><priority>0.3</priority><changefreq>yearly</changefreq></url>
-  <url><loc>https://cfg-seguros.com/politica-privacidad.html</loc><priority>0.3</priority><changefreq>yearly</changefreq></url>
-  <url><loc>https://cfg-seguros.com/blog/</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://cfg-seguros.com/</loc><lastmod>2026-07-26</lastmod></url>
+  <url><loc>https://cfg-seguros.com/aviso-legal.html</loc><lastmod>2026-07-26</lastmod></url>
+  <url><loc>https://cfg-seguros.com/blog/</loc><lastmod>2026-07-26</lastmod></url>
+  <url><loc>https://cfg-seguros.com/blog/ahorrar-seguro-coche.html</loc><lastmod>2026-07-26</lastmod></url>
+  <url><loc>https://cfg-seguros.com/blog/ahorro-inversion-primeros-pasos.html</loc><lastmod>2026-07-26</lastmod></url>
+  <url><loc>https://cfg-seguros.com/blog/autonomos-seguros-obligatorios-2026.html</loc><lastmod>2026-07-26</lastmod></url>
+  <url><loc>https://cfg-seguros.com/blog/proteccion-empresas-autonomos.html</loc><lastmod>2026-07-26</lastmod></url>
+  <url><loc>https://cfg-seguros.com/blog/seguro-autonomos-guia.html</loc><lastmod>2026-07-26</lastmod></url>
+  <url><loc>https://cfg-seguros.com/blog/seguro-coche-obligatorio-vs-completo.html</loc><lastmod>2026-07-26</lastmod></url>
+  <url><loc>https://cfg-seguros.com/blog/seguro-hogar-que-cubre.html</loc><lastmod>2026-07-26</lastmod></url>
+  <url><loc>https://cfg-seguros.com/blog/seguro-salud-guia-completa.html</loc><lastmod>2026-07-26</lastmod></url>
+  <url><loc>https://cfg-seguros.com/blog/seguro-vida-autonomos.html</loc><lastmod>2026-07-26</lastmod></url>
+  <url><loc>https://cfg-seguros.com/blog/seguro-vida-mitos-realidades.html</loc><lastmod>2026-07-26</lastmod></url>
+  <url><loc>https://cfg-seguros.com/cookies.html</loc><lastmod>2026-07-26</lastmod></url>
+  <url><loc>https://cfg-seguros.com/guia-10-trucos-seguro-coche.html</loc><lastmod>2026-07-26</lastmod></url>
+  <url><loc>https://cfg-seguros.com/privacidad.html</loc><lastmod>2026-07-26</lastmod></url>
+  <url><loc>https://cfg-seguros.com/referencia-crecimientofinancieroglobal.html</loc><lastmod>2026-07-26</lastmod></url>
+  <url><loc>https://cfg-seguros.com/seguros/</loc><lastmod>2026-07-26</lastmod></url>
+  <url><loc>https://cfg-seguros.com/seguros/ahorro-inversion.html</loc><lastmod>2026-07-26</lastmod></url>
+  <url><loc>https://cfg-seguros.com/seguros/coche.html</loc><lastmod>2026-07-26</lastmod></url>
+  <url><loc>https://cfg-seguros.com/seguros/empresas.html</loc><lastmod>2026-07-26</lastmod></url>
+  <url><loc>https://cfg-seguros.com/seguros/hogar.html</loc><lastmod>2026-07-26</lastmod></url>
+  <url><loc>https://cfg-seguros.com/seguros/salud.html</loc><lastmod>2026-07-26</lastmod></url>
+  <url><loc>https://cfg-seguros.com/seguros/vida.html</loc><lastmod>2026-07-26</lastmod></url>
 </urlset>
