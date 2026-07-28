@@ -1,0 +1,9 @@
+# Cabeceras para que Google entienda bien
+/*
+  X-Robots-Tag: index, follow
+
+/seguros/*
+  X-Robots-Tag: index, follow
+
+/seguro-*
+  X-Robots-Tag: noindex, follow

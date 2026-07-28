@@ -1,0 +1,20 @@
+# Redirigir URLs sin extensión y con guiones a las oficiales
+/seguro-vida.html /seguros/vida 301
+/seguro-vida/ /seguros/vida 301
+/seguro-coche.html /seguros/coche 301
+/seguro-coche/ /seguros/coche 301
+/seguro-salud.html /seguros/salud 301
+/seguro-salud/ /seguros/salud 301
+/seguro-empresas.html /seguros/empresas 301
+/seguro-empresas/ /seguros/empresas 301
+/seguro-ahorro-inversion.html /seguros/ahorro-inversion 301
+/seguro-ahorro-inversion/ /seguros/ahorro-inversion 301
+/seguro-hogar.html /seguros/hogar 301
+/seguro-hogar/ /seguros/hogar 301
+
+# Redirigir versiones con .html de seguros/ a sin extensión
+/seguros/*.html /seguros/:splat 301
+
+# Redirigir sobre-mi
+/sobre-mi.html /sobre-mi 301
+/sobre-mi/ /sobre-mi 301
