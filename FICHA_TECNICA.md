@@ -2,9 +2,9 @@
 
 > **URL:** https://cfg-seguros.com
 > **Eslogan:** Protege lo que importa
-> **Colores:** Azul marino (#0a1f44) + Dorado (#ffd700)
+> **Colores:** Fondo blanco (#ffffff) + Azul marino oscuro (#0a2a4a) + Negro texto (#111827)
 > **Tipo:** Web corporativa de seguros
-> **Última actualización:** 23 julio 2026
+> **Última actualización:** 6 agosto 2026
 
 ---
 
@@ -19,6 +19,7 @@
 | **Idioma** | Español (es) |
 | **Fecha de lanzamiento** | Julio 2026 |
 | **Estado** | ✅ COMPLETO |
+| **Rediseño** | 6 ago 2026: fondo blanco + navbar blanca, tarjetas portada textura oscura (títulos dorados #ffd700), subpáginas títulos azul oscuro + texto negro |
 | **Tipo** | Web corporativa + captación de leads |
 
 ---
@@ -87,6 +88,7 @@
 | Meta tags (description, og) | ✅ En todas las páginas |
 | Robots.txt | ✅ |
 | Sitemap | ✅ |
+| Blog (artículos SEO) | ✅ 24 artículos publicados (6 ago: «Qué cubre un seguro de vida y por qué te conviene tenerlo») |
 
 ---
 
@@ -104,9 +106,9 @@
 
 | Tarea | Prioridad | Estado |
 |---|---|---|
-| Google Business Profile | Media | ⏳ Esperando carta |
-| Revisar seguidores redes | Media | ⏳ Viernes 24 jul 20:00h |
-| Próximos posts | Media | ⏳ Viernes 24 jul 6:30h |
+| Google Business Profile | Media | ⏳ Esperando carta (pendiente reenviar desde business.google.com) |
+| Publicar artículos SEO | Media | 🔄 1-2/semana por web (6 ago: publicado seguro de vida) |
+| Google Search Console validar correcciones | Media | ⏳ Pendiente dar a «Validar corrección» |
 
 ---
 
