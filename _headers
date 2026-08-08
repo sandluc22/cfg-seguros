@@ -4,6 +4,3 @@
 
 /seguros/*
   X-Robots-Tag: index, follow
-
-/seguro-*
-  X-Robots-Tag: noindex, follow
