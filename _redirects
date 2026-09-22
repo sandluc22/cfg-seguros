@@ -16,5 +16,19 @@
 /seguros/*.html /seguros/:splat 301
 
 # Redirigir sobre-mi
-/sobre-mi.html /sobre-mi 301
-/sobre-mi/ /sobre-mi 301
+/sobre-mi.html / 301
+/sobre-mi/ / 301
+
+# Enlaces legales antiguos (evitar 404)
+/legal/politica-privacidad.html /privacidad.html 301
+/legal/politica-privacidad /privacidad.html 301
+/legal/* /privacidad.html 301
+
+# Redirigir www al dominio principal
+https://www.cfg-seguros.com/* https://cfg-seguros.com/:splat 301
+http://www.cfg-seguros.com/* https://cfg-seguros.com/:splat 301
+
+# Archivos retirados (contenido duplicado/backups) → home
+/referencia-crecimientofinancieroglobal.html / 301
+/seguros/index.html.bak /seguros/ 301
+/seguros/salud.html.bak-20260917-114501 /seguros/salud 301

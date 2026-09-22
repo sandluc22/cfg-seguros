@@ -1,6 +1,20 @@
-# Cabeceras para que Google entienda bien
+# Cabeceras de seguridad + SEO
 /*
   X-Robots-Tag: index, follow
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
 
 /seguros/*
+  X-Robots-Tag: index, follow
+
+/privacidad.html
+  X-Robots-Tag: index, follow
+
+/aviso-legal.html
+  X-Robots-Tag: index, follow
+
+/cookies.html
   X-Robots-Tag: index, follow

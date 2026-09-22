@@ -2,4 +2,11 @@
 User-agent: *
 Allow: /
 
+# Bloquear rutas internas / backups
+Disallow: /.seo_backup_20260811/
+Disallow: /sanitas_material/
+Disallow: /_borrados/
+Disallow: /*.bak
+Disallow: /*.bak-*
+
 Sitemap: https://cfg-seguros.com/sitemap.xml

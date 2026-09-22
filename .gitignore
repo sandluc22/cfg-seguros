@@ -1,0 +1,14 @@
+# Archivos internos que NO deben publicarse
+_backups_ignorar
+_borrados/
+.seo_backup_*/
+*.bak
+*.bak-*
+seguros/*.bak
+sanitas_material/
+temp-eclipse/
+blog.html
+brochure_web.html
+contenido_articulo1.html
+descargar.html
+referencia-crecimientofinancieroglobal.html
