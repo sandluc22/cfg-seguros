@@ -32,3 +32,10 @@ http://www.cfg-seguros.com/* https://cfg-seguros.com/:splat 301
 /referencia-crecimientofinancieroglobal.html / 301
 /seguros/index.html.bak /seguros/ 301
 /seguros/salud.html.bak-20260917-114501 /seguros/salud 301
+
+# Listado de blog antiguo (duplicado) → blog actual
+/blog.html /blog/ 301
+
+# Página de contacto antigua (ya es sección en home)
+/contacto.html /#contacto 301
+/contacto/ /#contacto 301
