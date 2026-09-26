@@ -117,8 +117,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e){
   if(get('seguro')) lineas.push('Seguro: ' + get('seguro'));
   if(get('aseguradora_interes')) lineas.push('Aseguradora: ' + get('aseguradora_interes'));
   if(get('message')) lineas.push('Mensaje: ' + get('message'));
-  var txt = encodeURIComponent(lineas.join('
-'));
+  var txt = encodeURIComponent(lineas.join('\n'));
   var url = 'https://api.whatsapp.com/send?phone=34641754490&text=' + txt;
   window.open(url, '_blank');
   document.getElementById('formOk').style.display = 'block';
