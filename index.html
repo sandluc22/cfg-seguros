@@ -380,9 +380,9 @@ footer .email{color:#0a2a4a;font-weight:600}
           He leído y acepto la <a href="/privacidad.html" target="_blank" rel="noopener" style="color:#0a2a4a;text-decoration:underline;">política de privacidad</a>
         </label>
       </div>
-      <button type="submit" class="btn-submit">📨 Enviar consulta</button>
+      <button type="submit" class="btn-submit">📨 Enviar por WhatsApp</button>
     </form>
-    <div id="formOk" style="display:none;background:#065f46;color:#d1fae5;padding:1rem;border-radius:8px;text-align:center;margin-top:1rem">✓ Mensaje enviado correctamente. Nos pondremos en contacto contigo.</div>
+    <div id="formOk" style="display:none;background:#065f46;color:#d1fae5;padding:1rem;border-radius:8px;text-align:center;margin-top:1rem">✓ ¡Listo! Se ha abierto WhatsApp con tus datos. Dale a enviar y te contestamos enseguida.</div>
   </div>
   <div style="text-align:center;margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid rgba(255,215,0,0.08)">
     <p style="color:#334155;font-size:.9rem;margin-bottom:.8rem">Síguenos en redes sociales</p><div class="social-icons">
@@ -403,34 +403,25 @@ footer .email{color:#0a2a4a;font-weight:600}
 </footer>
 
 <script>
-document.getElementById('contactForm').addEventListener('submit', async function(e) {
+document.getElementById('contactForm').addEventListener('submit', function(e){
   e.preventDefault();
-  const btn = this.querySelector('.btn-submit');
-  const orig = btn.textContent;
-  btn.textContent = 'Enviando...';
-  btn.disabled = true;
-  const formData = new FormData(this);
-  const data = {};
-  formData.forEach((v, k) => data[k] = v);
-  let ok = false;
-  try {
-    const r = await fetch('https://api.web3forms.com/submit', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(data)
-    });
-    const j = await r.json();
-    ok = j.success;
-  } catch(e) { console.log('W3 error:', e); }
-  btn.textContent = orig;
-  btn.disabled = false;
-  if (ok) {
-    this.reset();
-    document.getElementById('formOk').style.display = 'block';
-    setTimeout(() => document.getElementById('formOk').style.display = 'none', 5000);
-  } else {
-    alert('Error al enviar. Escribenos a info@cfg-seguros.com');
-  }
+  var fd = new FormData(this);
+  var get = function(n){ return (fd.get(n)||'').toString().trim(); };
+  var lineas = [];
+  lineas.push('*Nueva solicitud de seguro Sanitas*');
+  if(get('nombre')) lineas.push('Nombre: ' + get('nombre'));
+  if(get('telefono')) lineas.push('Teléfono: ' + get('telefono'));
+  if(get('email')) lineas.push('Email: ' + get('email'));
+  if(get('fecha_nacimiento')) lineas.push('Fecha nac.: ' + get('fecha_nacimiento'));
+  if(get('seguro')) lineas.push('Seguro: ' + get('seguro'));
+  if(get('aseguradora_interes')) lineas.push('Aseguradora: ' + get('aseguradora_interes'));
+  if(get('message')) lineas.push('Mensaje: ' + get('message'));
+  var txt = encodeURIComponent(lineas.join('
+'));
+  var url = 'https://api.whatsapp.com/send?phone=34641754490&text=' + txt;
+  window.open(url, '_blank');
+  document.getElementById('formOk').style.display = 'block';
+  this.reset();
 });
 </script>
 
