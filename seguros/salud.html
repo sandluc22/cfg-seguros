@@ -25,7 +25,7 @@
 <link rel="canonical" href="https://cfg-seguros.com/seguros/salud">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#ffffff;color:#1e293b;min-height:100vh}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#ffffff;color:#1e293b}
 .container{max-width:960px;margin:0 auto;padding:0 1.5rem}
 nav{background:#ffffff;backdrop-filter:blur(10px);padding:.8rem 0;border-bottom:1px solid #e2e8f0}
 nav .container{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
@@ -37,6 +37,7 @@ nav .container{display:flex;align-items:center;justify-content:space-between;fle
 .hero::after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;background:rgba(255,255,255,.08)}
 .hero .container{position:relative;z-index:2}
 .hero .badge{display:inline-block;background:#fff;color:#005ba8;font-weight:800;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;padding:.35rem .9rem;border-radius:999px;margin-bottom:1rem}
+.hero .brandlogo{display:block;width:110px;height:110px;object-fit:contain;margin:0 0 1.1rem;border-radius:50%;background:#fff;padding:4px;box-shadow:0 8px 26px rgba(0,0,0,.28)}
 .hero h1{font-size:2.3rem;line-height:1.15;margin-bottom:.8rem;max-width:720px}
 .hero h1 span{color:#d6ecff}
 .hero p.sub{font-size:1.1rem;line-height:1.6;opacity:.97;max-width:620px;margin-bottom:1.4rem}
@@ -83,11 +84,12 @@ section.bloque .lead{text-align:center;color:#475569;max-width:680px;margin:0 au
 .ctafinal a.wa{background:#25D366;color:#fff}
 .ctafinal a.mail{background:#fff;color:#005ba8}
 
-footer{text-align:center;padding:2rem;color:#64748b;font-size:.85rem;border-top:1px solid rgba(255,215,0,0.08)}
+footer{text-align:center;padding:2rem 2rem 5.5rem;color:#64748b;font-size:.85rem;border-top:1px solid rgba(255,215,0,0.08)}
 .social-links{display:flex;justify-content:center;gap:1rem;margin-bottom:.8rem;flex-wrap:wrap}
-.social-links a{display:inline-flex;align-items:center;gap:.4rem;padding:.4rem .8rem;border-radius:6px;color:#fff;font-size:.8rem;text-decoration:none;transition:opacity .2s}
-.social-links a:hover{opacity:.8}
-.social-links .ig{background:linear-gradient(135deg,#833ab4,#fd1d1d,#fcaf45)}
+.social-links a{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:50%;text-decoration:none;transition:transform .2s,opacity .2s;box-shadow:0 2px 8px rgba(0,0,0,.20)}
+.social-links a:hover{transform:translateY(-2px);opacity:.9}
+.social-links a svg{width:20px;height:20px;fill:#fff}
+.social-links .ig{background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888)}
 .social-links .fb{background:#1877f2}
 .social-links .ln{background:#0a66c2}
 .social-links .tt{background:#000}
@@ -162,9 +164,10 @@ footer a{color:#0a66c2}
 <!-- HERO -->
 <header class="hero">
   <div class="container">
+    <img class="brandlogo" src="/img/sanitas-logo.png" alt="Sanitas">
     <span class="badge">Agente exclusiva Sanitas</span>
-    <h1>Tu seguro de salud <span>Sanitas</span> si viajas a España</h1>
-    <p class="sub">Seguro de salud para <strong>extranjeros, estudiantes y mayores de 65</strong> que vienen a España. Sin copagos ni carencias, con gestión rápida y trato directo.</p>
+    <h1>Seguro de salud <span>Sanitas</span> en España</h1>
+    <p class="sub">Para <strong>estudiantes extranjeros, extranjeros residentes y mayores</strong>. Sin copagos ni carencias, con el cuadro médico completo de Sanitas.</p>
     <a href="#contacto" class="cta">Solicitar información →</a>
     <p class="contacto">📱 <a href="tel:+34641754490">+34 641 754 490</a> · ✉️ <a href="mailto:slcaicedo.agenteexclusivo@sanitas.es">slcaicedo.agenteexclusivo@sanitas.es</a></p>
   </div>
@@ -173,10 +176,10 @@ footer a{color:#0a66c2}
 <section class="bloque">
   <div class="container">
     <h2>¿Para quién es?</h2>
-    <p class="lead">Trabajo con Sanitas, la aseguradora líder en España en sanidad privada. Elige el seguro que encaja contigo:</p>
+    <p class="lead">Elige el seguro de salud Sanitas que encaja contigo:</p>
     <div class="grid">
       <div class="card">
-        <div class="emoji">🎓</div>
+        <div class="emoji"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#0079c8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1 2.5 2.5 6 2.5s6-1.5 6-2.5v-5"/></svg></div>
         <h3>Estudiantes extranjeros</h3>
         <p>El seguro obligatorio para tu visado de estudios en España, sin complicaciones ni retrasos en el expediente.</p>
         <ul>
@@ -186,7 +189,7 @@ footer a{color:#0a66c2}
         </ul>
       </div>
       <div class="card">
-        <div class="emoji">🌍</div>
+        <div class="emoji"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#0079c8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg></div>
         <h3>Extranjeros residentes</h3>
         <p>Si vienes a vivir, trabajar o residir en España, ten acceso a la sanidad privada desde el primer día.</p>
         <ul>
@@ -196,7 +199,7 @@ footer a{color:#0a66c2}
         </ul>
       </div>
       <div class="card">
-        <div class="emoji">👵</div>
+        <div class="emoji"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#0079c8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9z"/></svg></div>
         <h3>Mayores de 65</h3>
         <p>Sanitas te ofrece cobertura también en la tercera edad, sin edad límite y con atención personalizada.</p>
         <ul>
@@ -219,6 +222,8 @@ footer a{color:#0a66c2}
       <div><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="#0a2a4a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 13h6M12 10v6"/></svg><strong>Sin copagos ni carencias</strong><p style="color:#64748b;font-size:.86rem;margin-top:.3rem">Cobertura completa desde el primer día.</p></div>
       <div><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="#0a2a4a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 7h6M9 11h6M9 15h4"/></svg><strong>Válido para visados</strong><p style="color:#64748b;font-size:.86rem;margin-top:.3rem">Cumple todos los requisitos de Extranjería.</p></div>
       <div><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="#0a2a4a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg><strong>Gestión rápida</strong><p style="color:#64748b;font-size:.86rem;margin-top:.3rem">Te lo tramito yo, sin vueltas ni intermediarios.</p></div>
+      <div><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="#0a2a4a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg><strong>Cuadro médico completo</strong><p style="color:#64748b;font-size:.86rem;margin-top:.3rem">Miles de especialistas y centros en toda España.</p></div>
+      <div><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="#0a2a4a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><strong>Trato directo</strong><p style="color:#64748b;font-size:.86rem;margin-top:.3rem">Sin intermediarios: hablas siempre conmigo.</p></div>
     </div>
   </div>
 </section>
@@ -227,62 +232,35 @@ footer a{color:#0a66c2}
 <section class="bloque">
   <div class="container">
     <div class="sanitas">
-      <div class="logo-wrap"><img src="/img/sanitas-bloque.png" alt="Sanitas"></div>
+      <img src="/img/sanitas-logo.png" alt="Sanitas" style="height:88px;width:auto;border-radius:50%;margin-bottom:1rem;display:block;margin-left:auto;margin-right:auto;box-shadow:0 6px 20px rgba(0,0,0,.25)">
       <h2>Agente exclusiva de Sanitas</h2>
-      <p>Soy <strong>Sandra Lucía Caicedo</strong>, agente exclusiva de Sanitas. Te atiendo directamente, te preparo el presupuesto sin compromiso y gestiono tu póliza para que solo tengas que preocuparte de llegar a España.</p>
+      <p>Te atiendo directamente, te preparo el presupuesto sin compromiso y gestiono tu póliza para que solo tengas que preocuparte de llegar a España.</p>
       <p>Sin copagos · Sin carencias · Cuadro médico completo Sanitas</p>
     </div>
   </div>
 </section>
 
-<!-- CIUDADES -->
+<!-- PÓLIZAS SANITAS -->
 <section class="bloque aparte">
   <div class="container">
-    <h2>Seguro Sanitas para visado por ciudad</h2>
-    <p class="lead">Te ayudo con tu seguro Sanitas en las principales ciudades de España:</p>
-    <div class="benef">
-      <div><strong><a href="/seguros/salud-madrid">Seguro Sanitas en Madrid</a></strong></div>
-      <div><strong><a href="/seguros/salud-barcelona">Seguro Sanitas en Barcelona</a></strong></div>
-      <div><strong><a href="/seguros/salud-valencia">Seguro Sanitas en Valencia</a></strong></div>
-      <div><strong><a href="/seguros/salud-malaga">Seguro Sanitas en Málaga</a></strong></div>
-      <div><strong><a href="/seguros/salud-santander">Seguro Sanitas en Santander</a></strong></div>
-      <div><strong><a href="/seguros/salud-vigo">Seguro Sanitas en Vigo</a></strong></div>
-      <div><strong><a href="/seguros/salud-gijon">Seguro Sanitas en Gijón</a></strong></div>
-      <div><strong><a href="/seguros/salud-salamanca">Seguro Sanitas en Salamanca</a></strong></div>
-      <div><strong><a href="/seguros/salud-logrono">Seguro Sanitas en Logroño</a></strong></div>
-      <div><strong><a href="/seguros/salud-badajoz">Seguro Sanitas en Badajoz</a></strong></div>
-      <div><strong><a href="/seguros/salud-cadiz">Seguro Sanitas en Cádiz</a></strong></div>
-      <div><strong><a href="/seguros/salud-almeria">Seguro Sanitas en Almería</a></strong></div>
-      <div><strong><a href="/seguros/salud-pamplona">Seguro Sanitas en Pamplona</a></strong></div>
-      <div><strong><a href="/seguros/salud-san-sebastian">Seguro Sanitas en San Sebastián</a></strong></div>
-      <div><strong><a href="/seguros/salud-burgos">Seguro Sanitas en Burgos</a></strong></div>
-      <div><strong><a href="/seguros/salud-tarragona">Seguro Sanitas en Tarragona</a></strong></div>
-      <div><strong><a href="/seguros/salud-lleida">Seguro Sanitas en Lleida</a></strong></div>
-      <div><strong><a href="/seguros/salud-girona">Seguro Sanitas en Girona</a></strong></div>
-      <div><strong><a href="/seguros/salud-castellon">Seguro Sanitas en Castellón</a></strong></div>
-      <div><strong><a href="/seguros/salud-huelva">Seguro Sanitas en Huelva</a></strong></div>
-      <div><strong><a href="/seguros/salud-jaen">Seguro Sanitas en Jaén</a></strong></div>
-      <div><strong><a href="/seguros/salud-albacete">Seguro Sanitas en Albacete</a></strong></div>
-      <div><strong><a href="/seguros/salud-leon">Seguro Sanitas en León</a></strong></div>
-      <div><strong><a href="/seguros/salud-oviedo">Seguro Sanitas en Oviedo</a></strong></div>
-      <div><strong><a href="/seguros/salud-ourense">Seguro Sanitas en Ourense</a></strong></div>
-      <div><strong><a href="/seguros/salud-lugo">Seguro Sanitas en Lugo</a></strong></div>
-      <div><strong><a href="/seguros/salud-santiago">Seguro Sanitas en Santiago</a></strong></div>
-      <div><strong><a href="/seguros/salud-ceuta">Seguro Sanitas en Ceuta</a></strong></div>
-      <div><strong><a href="/seguros/salud-melilla">Seguro Sanitas en Melilla</a></strong></div>
-      <div><strong><a href="/seguros/salud-sevilla">Seguro Sanitas en Sevilla</a></strong></div>
-      <div><strong><a href="/seguros/salud-zaragoza">Seguro Sanitas en Zaragoza</a></strong></div>
-      <div><strong><a href="/seguros/salud-bilbao">Seguro Sanitas en Bilbao</a></strong></div>
-      <div><strong><a href="/seguros/salud-murcia">Seguro Sanitas en Murcia</a></strong></div>
-      <div><strong><a href="/seguros/salud-alicante">Seguro Sanitas en Alicante</a></strong></div>
-      <div><strong><a href="/seguros/salud-palma">Seguro Sanitas en Palma de Mallorca</a></strong></div>
-      <div><strong><a href="/seguros/salud-las-palmas">Seguro Sanitas en Las Palmas</a></strong></div>
-      <div><strong><a href="/seguros/salud-tenerife">Seguro Sanitas en Tenerife</a></strong></div>
-      <div><strong><a href="/seguros/salud-valladolid">Seguro Sanitas en Valladolid</a></strong></div>
-      <div><strong><a href="/seguros/salud-granada">Seguro Sanitas en Granada</a></strong></div>
-      <div><strong><a href="/seguros/salud-cordoba">Seguro Sanitas en Córdoba</a></strong></div>
-      <div><strong><a href="/seguros/salud-a-coruna">Seguro Sanitas en A Coruña</a></strong></div>
+    <h2>Pólizas Sanitas</h2>
+    <p class="lead">Todas las modalidades de salud de Sanitas, adaptadas a tu perfil:</p>
+    <div class="grid">
+      <div class="card"><h3>Students (estudiantes)</h3><p>Para estudiantes extranjeros y su visado de estudios. Sin copagos ni carencias.</p></div>
+      <div class="card"><h3>Residents (extranjeros)</h3><p>Para residencia, reagrupación familiar o nómada digital. Cuadro médico completo.</p></div>
+      <div class="card"><h3>Más Salud</h3><p>La gama de salud familiar de Sanitas, con la cobertura que necesitas.</p></div>
+      <div class="card"><h3>Profesionales y autónomos</h3><p>Soluciones de salud para profesionales y trabajadores por cuenta propia.</p></div>
+      <div class="card"><h3>Mayores de 65</h3><p>Cobertura en la tercera edad, sin edad máxima de contratación.</p></div>
+      <div class="card"><h3>Dental</h3><p>Salud bucodental con las clínicas Milenium de Sanitas.</p></div>
     </div>
+  </div>
+</section>
+
+<!-- COBERTURA -->
+<section class="bloque">
+  <div class="container">
+    <h2>Cobertura en toda España</h2>
+    <p class="lead">Cuadro médico completo de Sanitas en todo el país, sin importar dónde vivas: miles de centros y especialistas a tu disposición.</p>
   </div>
 </section>
 
@@ -299,7 +277,7 @@ footer a{color:#0a66c2}
   </div>
 </section>
 
-<footer><div class="container"><div class="social-links"><a href="https://www.instagram.com/cfg_seguros_gg/" target="_blank" rel="noopener" class="ig">📷 Instagram</a><a href="https://www.facebook.com/profile.php?id=61591242009330" target="_blank" rel="noopener" class="fb">📘 Facebook</a><a href="https://www.linkedin.com/company/cfg-seguros" target="_blank" rel="noopener" class="ln">💼 LinkedIn</a><a href="https://www.tiktok.com/@cfgsegurosgg" target="_blank" rel="noopener" class="tt">🎵 TikTok</a></div><p><a href="mailto:info@cfg-seguros.com">info@cfg-seguros.com</a></p><p style="margin-top:.3rem;font-size:.7rem;color:#334155">CFG-Seguros &copy; 2026</p></div></footer>
+<footer><div class="container"><div class="social-links"><a href="https://www.instagram.com/cfg_seguros_gg/" target="_blank" rel="noopener" class="ig" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zm0 3.68A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84zm0 10.16A4 4 0 1 1 16 12a4 4 0 0 1-4 4zm6.41-10.4a1.44 1.44 0 1 1-1.44-1.44 1.44 1.44 0 0 1 1.44 1.44z"/></svg></a><a href="https://www.facebook.com/profile.php?id=61591242009330" target="_blank" rel="noopener" class="fb" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg></a><a href="https://www.linkedin.com/company/cfg-seguros" target="_blank" rel="noopener" class="ln" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zm7 0h3.83v1.64h.05a4.2 4.2 0 0 1 3.78-2.08c4.04 0 4.79 2.66 4.79 6.12V21h-4v-5.4c0-1.29-.02-2.95-1.8-2.95-1.8 0-2.07 1.4-2.07 2.85V21h-4z"/></svg></a><a href="https://www.tiktok.com/@cfgsegurosgg" target="_blank" rel="noopener" class="tt" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M16.6 5.82A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 1 1-1.81-2.47V9.77a5.68 5.68 0 1 0 4.9 5.63V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3a4.3 4.3 0 0 1-3.24-1.48z"/></svg></a></div><p><a href="mailto:info@cfg-seguros.com">info@cfg-seguros.com</a></p><p style="margin-top:.3rem;font-size:.7rem;color:#334155">CFG-Seguros &copy; 2026</p></div></footer>
 
 <!-- Botón flotante WhatsApp -->
 <a href="https://api.whatsapp.com/send?phone=34641754490&text=Hola!%20Quiero%20informaci%C3%B3n%20sobre%20el%20seguro%20de%20salud%20Sanitas" target="_blank" id="wa-button" aria-label="Chatear por WhatsApp">
@@ -310,7 +288,7 @@ footer a{color:#0a66c2}
 
 <!-- Cookie consent banner -->
 <div id="cookie-banner" class="cookie-banner">
-  <span>Usamos cookies propias y de terceros (Google Analytics) para mejorar tu experiencia. <a href="/cookies.html">Más información</a></span>
+  <span>Usamos cookies propias y de terceros (Google Analytics) para mejorar tu experiencia. <a href="/cookies">Más información</a></span>
   <button onclick="aceptarCookies()">Aceptar</button>
 </div>
 <script>
