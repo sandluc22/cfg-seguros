@@ -75,6 +75,18 @@ section.bloque .lead{text-align:center;color:#475569;max-width:680px;margin:0 au
 .sanitas h2{color:#fff !important;font-size:1.6rem;margin-bottom:.5rem}
 .sanitas p{opacity:.95;line-height:1.6;max-width:620px;margin:0 auto .6rem}
 
+
+/* GALERIA POSTERS */
+.posters{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.4rem;max-width:1000px;margin:0 auto}
+.poster{background:#fff;border:1px solid #e2e8f0;border-radius:16px;overflow:hidden;box-shadow:0 2px 10px rgba(15,23,42,.06);transition:transform .2s,box-shadow .2s}
+.poster:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(0,121,200,.16)}
+.poster a{display:block;text-decoration:none}
+.poster img{width:100%;height:auto;display:block}
+.poster .cap{padding:.9rem 1.1rem;border-top:1px solid #eef2f7}
+.poster .cap h3{color:#0079c8;font-size:1.02rem;margin-bottom:.2rem}
+.poster .cap p{color:#64748b;font-size:.85rem;line-height:1.45;margin:0}
+.poster .cap .cta-mini{display:inline-block;margin-top:.5rem;color:#e60026;font-weight:800;font-size:.85rem}
+
 /* CTA FINAL */
 .ctafinal{background:#005ba8;color:#fff;padding:2.8rem 0;text-align:center}
 .ctafinal h2{font-size:1.7rem;margin-bottom:.6rem}
@@ -240,18 +252,42 @@ footer a{color:#0a66c2}
   </div>
 </section>
 
-<!-- PÓLIZAS SANITAS -->
+<!-- PÓLIZAS SANITAS (pósters) -->
 <section class="bloque aparte">
   <div class="container">
     <h2>Pólizas Sanitas</h2>
-    <p class="lead">Todas las modalidades de salud de Sanitas, adaptadas a tu perfil:</p>
-    <div class="grid">
-      <div class="card"><h3>Students (estudiantes)</h3><p>Para estudiantes extranjeros y su visado de estudios. Sin copagos ni carencias.</p></div>
-      <div class="card"><h3>Residents (extranjeros)</h3><p>Para residencia, reagrupación familiar o nómada digital. Cuadro médico completo.</p></div>
-      <div class="card"><h3>Más Salud</h3><p>La gama de salud familiar de Sanitas, con la cobertura que necesitas.</p></div>
-      <div class="card"><h3>Profesionales y autónomos</h3><p>Soluciones de salud para profesionales y trabajadores por cuenta propia.</p></div>
-      <div class="card"><h3>Mayores de 65</h3><p>Cobertura en la tercera edad, sin edad máxima de contratación.</p></div>
-      <div class="card"><h3>Dental</h3><p>Salud bucodental con las clínicas Milenium de Sanitas.</p></div>
+    <p class="lead">Todas las modalidades de salud de Sanitas, resumidas en un vistazo. Toca cualquier póster para verlo a pantalla completa.</p>
+    <div class="posters">
+      <div class="poster">
+        <a href="/img/posters/seguro-salud-sanitas-students-internacionales.jpg" target="_blank" rel="noopener">
+          <img src="/img/posters/seguro-salud-sanitas-students-internacionales.jpg" alt="Seguro de salud Sanitas International Students para estudiantes internacionales en España y visado de estudios" loading="lazy" width="1080" height="1920">
+        </a>
+        <div class="cap"><h3>Students · Estudiantes internacionales</h3><p>Apto para visado de estudios, sin copago y sin carencias. Para estudiantes extranjeros en España.</p><span class="cta-mini">Ver póster →</span></div>
+      </div>
+      <div class="poster">
+        <a href="/img/posters/seguro-salud-sanitas-residents-visado-residencia.jpg" target="_blank" rel="noopener">
+          <img src="/img/posters/seguro-salud-sanitas-residents-visado-residencia.jpg" alt="Seguro de salud Sanitas Residents y Platinum para visado de residencia en España" loading="lazy" width="1080" height="1920">
+        </a>
+        <div class="cap"><h3>Residents · Visado de residencia</h3><p>Para visado de residencia, reagrupación familiar o nómada digital. Sin copago, sin carencias y con repatriación.</p><span class="cta-mini">Ver póster →</span></div>
+      </div>
+      <div class="poster">
+        <a href="/img/posters/seguro-salud-sanitas-mas-salud-familias.jpg" target="_blank" rel="noopener">
+          <img src="/img/posters/seguro-salud-sanitas-mas-salud-familias.jpg" alt="Seguro de salud Sanitas Más Salud Familias, cobertura familiar hasta 75 años" loading="lazy" width="1080" height="1920">
+        </a>
+        <div class="cap"><h3>Más Salud Familias</h3><p>La mejor atención médica para toda la familia, hasta los 75 años y con pediatría hasta los 15.</p><span class="cta-mini">Ver póster →</span></div>
+      </div>
+      <div class="poster">
+        <a href="/img/posters/seguro-salud-sanitas-accede-avanza-unico.jpg" target="_blank" rel="noopener">
+          <img src="/img/posters/seguro-salud-sanitas-accede-avanza-unico.jpg" alt="Comparativa Sanitas Accede, Avanza y Único, seguro de salud sin límite de edad" loading="lazy" width="1080" height="1920">
+        </a>
+        <div class="cap"><h3>Accede · Avanza · Único</h3><p>Compara las tres modalidades. Accede y Avanza hasta 59 años; Único desde 60 sin cuestionario.</p><span class="cta-mini">Ver póster →</span></div>
+      </div>
+      <div class="poster">
+        <a href="/img/posters/seguro-salud-autonomos-profesionales-sanitas.jpg" target="_blank" rel="noopener">
+          <img src="/img/posters/seguro-salud-autonomos-profesionales-sanitas.jpg" alt="Seguro de salud Sanitas para autónomos y profesionales, deducible en el IRPF" loading="lazy" width="1080" height="1920">
+        </a>
+        <div class="cap"><h3>Profesionales y autónomos</h3><p>Salud para profesionales y trabajadores por cuenta propia, deducible en el IRPF.</p><span class="cta-mini">Ver póster →</span></div>
+      </div>
     </div>
   </div>
 </section>
