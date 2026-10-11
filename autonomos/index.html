@@ -52,6 +52,32 @@ ul.checks li:before{content:"✔";position:absolute;left:0;color:#0079C8;font-we
 .foot{text-align:center;padding:1.6rem;color:#64748b;font-size:.83rem}
 .foot a{color:#0079C8;font-weight:600;text-decoration:none}
 .wa{position:fixed;right:18px;bottom:18px;background:#25D366;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(0,0,0,.3);z-index:60}
+
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1rem 0 2rem}
+.card{background:#fff;border:1.5px solid #dbe7f3;border-radius:16px;padding:1.4rem 1.2rem;position:relative;display:flex;flex-direction:column}
+.card.hl{border-color:#0079C8;border-width:2px;background:#f4f9fd;box-shadow:0 10px 30px rgba(0,121,200,.12)}
+.card .tag{display:inline-block;font-size:.7rem;font-weight:800;letter-spacing:.5px;color:#fff;background:#0079C8;padding:.25rem .6rem;border-radius:6px;margin-bottom:.7rem;align-self:flex-start}
+.card .tag.medio{background:#d99b00}
+.card .tag.bajo{background:#e8720c}
+.card .name{font-size:1rem;font-weight:800;color:#0079C8;line-height:1.2}
+.card .price{font-size:1.9rem;font-weight:900;color:#0a2a4a;line-height:1;margin:.5rem 0 .2rem}
+.card .price small{font-size:.85rem;font-weight:600;color:#64748b}
+.card ul{list-style:none;margin-top:.9rem;padding:0}
+.card li{font-size:.9rem;color:#0f2844;padding:.28rem 0 .28rem 1.5rem;position:relative}
+.card li:before{content:"✔";position:absolute;left:0;color:#0079C8;font-weight:900}
+.card li.only{color:#94a3b8;font-weight:400}
+.card li.only:before{content:"—";color:#cbd5e1}
+.note{background:#fff8e1;border-left:4px solid #f0b400;border-radius:0 8px 8px 0;padding:.9rem 1.1rem;font-size:.85rem;color:#5a4a1a;margin-bottom:2rem}
+.ventajas{list-style:none;padding:0;margin-bottom:2rem}
+.ventajas li{padding:.5rem 0 .5rem 1.8rem;position:relative;color:#0f2844;border-bottom:1px solid #eef2f7}
+.ventajas li:before{content:"•";position:absolute;left:.4rem;color:#0079C8;font-weight:900;font-size:1.2rem;line-height:1}
+.stats{display:grid;grid-template-columns:repeat(6,1fr);gap:.6rem;margin:1rem 0 2rem}
+.stat{background:#eef5fb;border:1px solid #cfe0f0;border-radius:12px;padding:.9rem .4rem;text-align:center}
+.stat .n{font-size:1.25rem;font-weight:900;color:#0079C8;line-height:1.05}
+.stat .t{font-size:.66rem;color:#5a6b7a;line-height:1.15;margin-top:.25rem}
+.sec-h2{font-size:1.4rem;color:#0a2a4a;margin:1.8rem 0 1rem;padding-bottom:.5rem;border-bottom:2px solid #0079C8}
+@media(max-width:760px){.cards{grid-template-columns:1fr}.stats{grid-template-columns:repeat(3,1fr)}}
+
 @media(max-width:760px){.hero{grid-template-columns:1fr}.hero .poster{max-width:420px;margin:0 auto}.grid2{grid-template-columns:1fr}}
 </style>
 <script type="application/ld+json">
@@ -137,14 +163,74 @@ ul.checks li:before{content:"✔";position:absolute;left:0;color:#0079C8;font-we
 
 <div class="container">
   <div class="hero">
-    <div class="poster"><img src="/img/posters/seguro-salud-autonomos-profesionales-sanitas.jpg" alt="Seguro de salud para autónomos y profesionales"></div>
+    <div class="poster"><img src="/img/posters/seguro-salud-autonomos-profesionales-sanitas.jpg" alt="Seguro de salud Sanitas para autónomos y profesionales"></div>
     <div class="txt">
-      <h1>Seguro de salud para autónomos y profesionales</h1>
-      <p class="sub">Cobertura médica completa sin depender de la Seguridad Social: sin copagos, sin listas de espera y deducible en tu declaración de la renta.</p>
-      <ul class="checks"><li>Sin copagos</li><li>Apto para deducir en la renta</li><li>Sin lista de espera</li><li>Cobertura completa</li></ul>
-      <a class="cta" href="#contacto">Escríbenos ahora</a>
+      <h1>Tu mejor inversión eres tú.<br>Nosotros te protegemos.</h1>
+      <p class="sub">Seguro de salud Sanitas para autónomos y profesionales: cobertura médica completa, sin listas de espera y deducible en tu declaración de la renta.</p>
+      <ul class="checks"><li>Con o sin copago, tú eliges</li><li>Deducible en tu renta (hasta 500 €)</li><li>Sin lista de espera</li><li>Incluye a tu cónyuge e hijos</li></ul>
+      <a class="cta" href="#contacto">Pide tu presupuesto</a>
       <p style="margin-top:.9rem;font-size:.85rem;color:#64748b">O llámanos: <a href="tel:+34641754490" style="color:#0079C8;font-weight:700;text-decoration:none">+34 641 754 490</a></p>
     </div>
+  </div>
+
+  <h2 class="sec-h2">Elige cómo quieres pagarlo</h2>
+  <div class="cards">
+    <div class="card hl">
+      <span class="tag">SIN COPAGO</span>
+      <div class="name">Profesionales</div>
+      <div class="price">desde 81,00 €<small> /mes</small></div>
+      <ul>
+        <li>No pagas nada al usar</li>
+        <li>Cobertura completa</li>
+        <li>Protección por baja</li>
+        <li>Seguro de decesos (5.250 €)</li>
+      </ul>
+    </div>
+    <div class="card">
+      <span class="tag medio">COPAGO MEDIO</span>
+      <div class="name">Profesionales Plus</div>
+      <div class="price">desde 51,40 €<small> /mes</small></div>
+      <ul>
+        <li>6 primeros servicios gratis</li>
+        <li>Copago máx. 360 €/año</li>
+        <li>Cobertura completa</li>
+        <li class="only">Sin protección por baja</li>
+        <li class="only">Sin seguro de decesos</li>
+      </ul>
+    </div>
+    <div class="card">
+      <span class="tag bajo">COPAGO BAJO</span>
+      <div class="name">Profesionales Óptima</div>
+      <div class="price">desde 38,90 €<small> /mes</small></div>
+      <ul>
+        <li>4 € el 1er servicio</li>
+        <li>La prima más baja</li>
+        <li>Cobertura completa</li>
+        <li>Protección por baja</li>
+        <li class="only">Sin seguro de decesos</li>
+      </ul>
+    </div>
+  </div>
+  <div class="note"><strong>Precios «desde»</strong>, orientativos (altas nuevas). El precio final depende de tu edad, ciudad y número de personas a asegurar.</div>
+
+  <h2 class="sec-h2">Ventajas para ti como autónomo</h2>
+  <ul class="ventajas">
+    <li><strong>Tus primeros 500 €, exentos de IRPF.</strong></li>
+    <li><strong>−10% para siempre</strong> en pólizas de 4 o más asegurados · <strong>−4%</strong> por pago anual.</li>
+    <li><strong>Protección por baja:</strong> te devuelven la prima del seguro ante hospitalización o baja; apoyo en las tareas del hogar y envío de medicamentos a casa.</li>
+    <li><strong>Asistencia sanitaria por accidente</strong> laboral o de tráfico.</li>
+    <li><strong>Puede incluir a tu cónyuge e hijos</strong> (hasta 26 años), todo en la misma póliza.</li>
+    <li><strong>Blua · Salud digital de Sanitas:</strong> videoconsulta 24h, chequea tu salud, fisio digital y programas de salud, desde la app Mi Sanitas.</li>
+  </ul>
+
+  <h2 class="sec-h2">La red Sanitas en números</h2>
+  <div class="stats">
+    <div class="stat"><div class="n">+58.000</div><div class="t">médicos</div></div>
+    <div class="stat"><div class="n">+4.500</div><div class="t">centros propios y concertados</div></div>
+    <div class="stat"><div class="n">31</div><div class="t">centros multiespecialidad</div></div>
+    <div class="stat"><div class="n">25</div><div class="t">centros de rehabilitación</div></div>
+    <div class="stat"><div class="n">5</div><div class="t">hospitales propios</div></div>
+    <div class="stat"><div class="n">+3</div><div class="t">en proyecto</div></div>
   </div>
 
   <section class="faq-sec">

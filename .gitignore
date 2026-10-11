@@ -12,3 +12,7 @@ brochure_web.html
 contenido_articulo1.html
 descargar.html
 referencia-crecimientofinancieroglobal.html
+
+# backups locales
+*.bak_*
+*bak_*/
