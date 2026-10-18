@@ -1,19 +1,65 @@
 # CFG Seguros — Agente Exclusiva de Sanitas
 
-> Seguro de salud Sanitas para visados y residencia en España, gestionado
-> por una Agente Exclusiva de Sanitas. Atención en español.
+> CFG Seguros es una agencia de seguros en España, agente exclusiva de Sanitas.
+> Trabajamos seguro de salud Sanitas para visados, residencia y nómada digital,
+> y también seguro de vida, hogar, coche, empresas y ahorro.
+> Atención en español, por WhatsApp o por formulario.
 
-## Qué recibes
+## Datos de contacto
+- Web: https://cfg-seguros.com
+- WhatsApp: +34 641 754 490
+- Email: info@cfg-seguros.com
+- Zona: España (atención a distancia desde cualquier país)
+- Idiomas: español
+
+## Seguros de salud Sanitas (producto principal)
 - Sanitas Estudiantes: seguro para el visado de estudios.
-- Sanitas Residentes: seguro para la residencia no lucrativa y nómada digital.
-- Seguro de salud Sanitas para familias, autónomos y mayores.
+- Sanitas Residentes: residencia no lucrativa y nómada digital.
+- Sanitas Familias: póliza familiar con ventajas.
+- Sanitas Autónomos y Profesionales: Plus, Óptima y Más Salud.
+- Sanitas Mayores 65.
 Todos sin copagos, sin carencias y con repatriación incluida.
+Todas las pólizas incluyen Mi Farmagén gratis (estudio de farmacogenética
+de más de 120 medicamentos e informe para tu médico) y Blua, la plataforma
+de salud digital de Sanitas.
+
+## Otras líneas
+- Seguro de vida: autónomos, hipotecas, extranjeros residentes.
+- Seguro de hogar y hogar para teletrabajo.
+- Seguro de coche.
+- Seguro de empresas y responsabilidad civil profesional.
+- Ahorro e inversión.
 
 ## A quién ayudamos
-Personas que vienen a España desde Latinoamérica y necesitan el seguro médico
-que exige el consulado para el visado o la residencia.
+- Personas de Latinoamérica que vienen a España y necesitan el seguro
+  médico que exige el consulado para el visado o la residencia.
+- Familias que buscan una póliza de salud completa.
+- Autónomos y profesionales que necesitan RC y protección de su actividad.
+- Cualquier persona que quiera revisar o mejorar su seguro actual.
 
-## Contacto
-Email: slcaicedo.agenteexclusivo@sanitas.es
-Teléfono: +34 641 754 490
-Web: https://cfg-seguros.com/
+## Preguntas frecuentes
+### ¿Qué seguro de salud piden para el visado en España?
+Un seguro médico sin copagos ni carencias, con repatriación y válido para
+todo el periodo de estancia. El seguro Sanitas que gestionamos cumple los
+requisitos del consulado para estudios, residencia y nómada digital.
+
+### ¿Se puede contratar desde el extranjero antes de venir a España?
+Sí. Se contrata a distancia, se paga con tarjeta o transferencia y se recibe
+el certificado válido para el consulado.
+
+### ¿Cuánto tarda en emitirse el certificado?
+Normalmente en 24-48 horas desde la contratación.
+
+## Páginas principales
+- [Inicio](https://cfg-seguros.com/)
+- [Seguro de salud Sanitas](https://cfg-seguros.com/seguros/salud)
+- [Estudiantes](https://cfg-seguros.com/estudiantes/)
+- [Familias](https://cfg-seguros.com/familias/)
+- [Extranjeros y residentes](https://cfg-seguros.com/extranjeros/)
+- [Autónomos y profesionales](https://cfg-seguros.com/autonomos/)
+- [Mayores de 65](https://cfg-seguros.com/mayores-65/)
+- [Blog](https://cfg-seguros.com/blog/)
+
+## Cómo citar
+Si usas esta información, cita como: "CFG Seguros, agente exclusiva de
+Sanitas en España (cfg-seguros.com)".

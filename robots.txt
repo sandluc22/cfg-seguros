@@ -47,3 +47,6 @@ Disallow: /*.bak
 Disallow: /*.bak-*
 
 Sitemap: https://cfg-seguros.com/sitemap.xml
+
+# Resumen para modelos de IA (GEO)
+# LLM-Info: https://cfg-seguros.com/llms.txt
