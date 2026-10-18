@@ -76,6 +76,28 @@ section.bloque .lead{text-align:center;color:#475569;max-width:680px;margin:0 au
 .sanitas p{opacity:.95;line-height:1.6;max-width:620px;margin:0 auto .6rem}
 
 
+
+/* BOTON PERFIL (azul Sanitas) */
+.btn-perfil{display:inline-block;margin-top:.85rem;background:#0079c8;color:#fff!important;text-decoration:none;font-weight:700;font-size:.88rem;padding:.55rem 1.1rem;border-radius:9px;transition:background .2s,transform .15s}
+.btn-perfil:hover{background:#0a5f9c;transform:translateY(-1px)}
+
+
+/* FORMULARIO PRESUPUESTO - FONDO BLANCO */
+.form-sec{background:#ffffff;border:1px solid #dbe7f2;border-radius:18px;padding:2rem;margin:0 auto;max-width:900px;color:#0a2a4a;box-shadow:0 4px 18px rgba(15,42,74,.08)}
+.form-sec h2{font-size:1.5rem;margin-bottom:.3rem;color:#005ba8}
+.form-sec p.intro{color:#4a6178;margin-bottom:1.3rem;font-size:.95rem}
+.form-sec .grid2{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}
+.form-sec .form-group{display:flex;flex-direction:column;gap:.3rem}
+.form-sec .form-group.full{grid-column:1/-1}
+.form-sec label{font-size:.82rem;color:#0a2a4a;font-weight:700}
+.form-sec input,.form-sec textarea{padding:.7rem .8rem;border-radius:8px;border:1.5px solid #cfe0ef;background:#ffffff;color:#0a2a4a;font-family:inherit;font-size:.95rem}
+.form-sec input:focus,.form-sec textarea:focus{outline:none;border-color:#0079c8;box-shadow:0 0 0 3px rgba(0,121,200,.14)}
+.form-sec input::placeholder,.form-sec textarea::placeholder{color:#9aabbd}
+.form-sec .btn-submit{grid-column:1/-1;margin-top:.6rem;background:#0079c8;color:#fff;border:none;border-radius:9px;padding:.9rem 1.6rem;font-weight:800;font-size:1rem;cursor:pointer;font-family:inherit;transition:background .2s}
+.form-sec .btn-submit:hover{background:#0a5f9c}
+.form-sec .btn-submit:disabled{opacity:.7;cursor:wait}
+@media(max-width:640px){.form-sec .grid2{grid-template-columns:1fr}}
+
 /* GALERIA POSTERS */
 .posters{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.4rem;max-width:1000px;margin:0 auto}
 .poster{background:#fff;border:1px solid #e2e8f0;border-radius:16px;overflow:hidden;box-shadow:0 2px 10px rgba(15,23,42,.06);transition:transform .2s,box-shadow .2s}
@@ -201,6 +223,7 @@ footer a{color:#0a66c2}
           <li>Psicología, logopedia y podología</li>
           <li>Dental incluido</li>
         </ul>
+        <a class="btn-perfil" href="/familias">Ver Familias →</a>
       </div>
       <div class="card">
         <div class="emoji"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#0079c8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><path d="M2 13h20"/></svg></div>
@@ -211,6 +234,7 @@ footer a{color:#0a66c2}
           <li>Cobertura completa y sin listas de espera</li>
           <li>Cuadro médico en toda España</li>
         </ul>
+        <a class="btn-perfil" href="/autonomos">Ver Autónomos →</a>
       </div>
       <div class="card">
         <div class="emoji"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#0079c8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1 2.5 2.5 6 2.5s6-1.5 6-2.5v-5"/></svg></div>
@@ -221,6 +245,7 @@ footer a{color:#0a66c2}
           <li>Sin copagos y sin carencias</li>
           <li>Emisión rápida de la póliza</li>
         </ul>
+        <a class="btn-perfil" href="/estudiantes">Ver Estudiantes →</a>
       </div>
       <div class="card">
         <div class="emoji"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#0079c8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg></div>
@@ -231,6 +256,7 @@ footer a{color:#0a66c2}
           <li>Cuadro médico completo en toda España</li>
           <li>Sin periodos de carencia</li>
         </ul>
+        <a class="btn-perfil" href="/extranjeros">Ver Residentes →</a>
       </div>
       <div class="card">
         <div class="emoji"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#0079c8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9z"/></svg></div>
@@ -241,6 +267,7 @@ footer a{color:#0a66c2}
           <li>Especialistas sin listas de espera</li>
           <li>Cobertura hospitalaria y de urgencias</li>
         </ul>
+        <a class="btn-perfil" href="/mayores-65">Ver Mayores de 65 →</a>
       </div>
     </div>
   </div>
@@ -279,40 +306,6 @@ footer a{color:#0a66c2}
   <div class="container">
     <h2>Pólizas Sanitas</h2>
     <p class="lead">Todas las modalidades de salud de Sanitas, resumidas en un vistazo. Toca el nombre de cada póliza para ver toda la información y pedir tu precio.</p>
-    <div class="posters">
-      <div class="poster">
-        <a href="/estudiantes" aria-label="Más información del seguro Sanitas para estudiantes">
-          <img src="/img/posters/seguro-salud-sanitas-students-internacionales.jpg" alt="Seguro de salud Sanitas International Students para estudiantes internacionales en España y visado de estudios" loading="lazy" width="1080" height="1920">
-        </a>
-        <div class="cap"><h3>Students · Estudiantes internacionales</h3><p>Apto para visado de estudios, sin copago y sin carencias. Para estudiantes extranjeros en España.</p><a class="cta-poster" href="/estudiantes">Ver información →</a></div>
-      </div>
-      <div class="poster">
-        <a href="/extranjeros" aria-label="Más información del seguro Sanitas para extranjeros y visado de residencia">
-          <img src="/img/posters/seguro-salud-sanitas-residents-visado-residencia.jpg" alt="Seguro de salud Sanitas Residents y Platinum para visado de residencia en España" loading="lazy" width="1080" height="1920">
-        </a>
-        <div class="cap"><h3>Residents · Visado de residencia</h3><p>Para visado de residencia, reagrupación familiar o nómada digital. Sin copago, sin carencias y con repatriación.</p><a class="cta-poster" href="/extranjeros">Ver información →</a></div>
-      </div>
-      <div class="poster">
-        <a href="/familias" aria-label="Más información del seguro Sanitas Más Salud para familias">
-          <img src="/img/posters/seguro-salud-sanitas-mas-salud-familias.jpg" alt="Seguro de salud Sanitas Más Salud Familias, cobertura familiar hasta 75 años" loading="lazy" width="1080" height="1920">
-        </a>
-        <div class="cap"><h3>Más Salud Familias</h3><p>La mejor atención médica para toda la familia, hasta los 75 años y con pediatría hasta los 15.</p><a class="cta-poster" href="/familias">Ver información →</a></div>
-      </div>
-      <div class="poster">
-        <a href="/mayores-65" aria-label="Más información del seguro Sanitas para mayores de 65 años">
-          <img src="/img/posters/seguro-salud-sanitas-accede-avanza-unico.jpg" alt="Comparativa Sanitas Accede, Avanza y Único, seguro de salud sin límite de edad" loading="lazy" width="1080" height="1920">
-        </a>
-        <div class="cap"><h3>Accede · Avanza · Único</h3><p>Compara las tres modalidades. Accede y Avanza hasta 59 años; Único desde 60 sin cuestionario.</p><a class="cta-poster" href="/mayores-65">Ver información →</a></div>
-      </div>
-      <div class="poster">
-        <a href="/autonomos" aria-label="Más información del seguro Sanitas para autónomos y profesionales">
-          <img src="/img/posters/seguro-salud-autonomos-profesionales-sanitas.jpg" alt="Seguro de salud Sanitas para autónomos y profesionales, deducible en el IRPF" loading="lazy" width="1080" height="1920">
-        </a>
-        <div class="cap"><h3>Profesionales y autónomos</h3><p>Salud para profesionales y trabajadores por cuenta propia, deducible en el IRPF.</p><a class="cta-poster" href="/autonomos">Ver información →</a></div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- COBERTURA -->
 <section class="bloque">
@@ -323,17 +316,56 @@ footer a{color:#0a66c2}
 </section>
 
 <!-- CTA FINAL -->
-<section class="ctafinal" id="contacto">
+<section class="bloque">
   <div class="container">
-    <h2>Te lo tramito</h2>
-    <p>Cuéntame tu caso (familia, autónomo, estudiante, residente o mayor) y te preparo la mejor opción con Sanitas.</p>
-    <div class="btns">
-      <a class="wa" href="https://api.whatsapp.com/send?phone=34641754490&text=Hola!%20Quiero%20informaci%C3%B3n%20sobre%20el%20seguro%20de%20salud%20Sanitas" target="_blank" rel="noopener">💬 WhatsApp</a>
-      <a class="mail" href="mailto:slcaicedo.agenteexclusivo@sanitas.es">✉️ Escribir un email</a>
-    </div>
-    <p style="margin-top:1.2rem;font-size:.9rem;opacity:.85">📱 +34 641 754 490 · ✉️ slcaicedo.agenteexclusivo@sanitas.es</p>
+  <section id="contacto" class="form-sec">
+    <h2>Pide tu presupuesto</h2>
+    <p class="intro">Déjanos tus datos y te preparo tu seguro Sanitas sin compromiso. Te gestiono toda la póliza, de principio a fin.</p>
+    <form id="contactForm">
+      <input type="hidden" name="access_key" value="58b165d2-318b-4718-bb6a-9b46dbb4540d">
+      <input type="hidden" name="subject" value="Lead pagina salud Sanitas">
+      <input type="hidden" name="from_name" value="CFG Seguros - Salud">
+      <input type="hidden" name="aseguradora_interes" value="Sanitas">
+      <input type="hidden" name="seguro" value="Salud">
+      <div class="grid2">
+        <div class="form-group"><label>Nombre completo *</label><input type="text" name="nombre" placeholder="Tu nombre" required></div>
+        <div class="form-group"><label>Teléfono *</label><input type="tel" name="telefono" placeholder="Tu teléfono" required></div>
+        <div class="form-group"><label>Email *</label><input type="email" name="email" placeholder="tu@email.com" required></div>
+        <div class="form-group"><label>Fecha de nacimiento</label><input type="date" name="fecha_nacimiento"></div>
+        <div class="form-group full"><label>Mensaje</label><textarea name="message" rows="3" placeholder="Cuéntame tu caso (familia, autónomo, estudiante, residente o mayor)"></textarea></div>
+        <div class="form-group full"><label style="display:flex;align-items:flex-start;gap:8px;font-size:12px;font-weight:400;cursor:pointer"><input type="checkbox" required style="margin-top:3px;accent-color:#0079C8"><span>He leído y acepto la <a href="/privacidad" target="_blank" rel="noopener" style="color:#0079c8">política de privacidad</a></span></label></div>
+      </div>
+      <button type="submit" class="btn-submit">📨 Enviar solicitud</button>
+    </form>
+    <div id="formOk" style="display:none;background:#065f46;color:#d1fae5;padding:1rem;border-radius:8px;text-align:center;margin-top:1rem">✓ ¡Listo! He recibido tus datos. Te contacto enseguida. Si prefieres, escríbeme también por WhatsApp.</div>
+  </section>
   </div>
 </section>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', async function(e){
+  e.preventDefault();
+  var btn=this.querySelector('.btn-submit'); var orig=btn?btn.textContent:'';
+  if(btn){btn.textContent='Enviando...';btn.disabled=true;}
+  var fd=new FormData(this); var data={}; fd.forEach(function(v,k){data[k]=v;});
+  var ok=false;
+  try{
+    var r=await fetch('https://api.web3forms.com/submit',{method:'POST',
+      headers:{'Content-Type':'application/json','Accept':'application/json'},
+      body:JSON.stringify(data)});
+    var j=await r.json(); ok=j.success;
+  }catch(err){ console.log('W3 error:',err); }
+  if(btn){btn.textContent=orig;btn.disabled=false;}
+  if(ok){
+    this.reset();
+    var okd=document.getElementById('formOk');
+    okd.style.display='block';
+    setTimeout(function(){okd.style.display='none';},8000);
+  }else{
+    alert('No se pudo enviar. Escríbeme a info@cfg-seguros.com o por WhatsApp.');
+  }
+});
+</script>
 
 <footer><div class="container"><div class="social-links"><a href="https://www.instagram.com/cfg_seguros_gg/" target="_blank" rel="noopener" class="ig" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zm0 3.68A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84zm0 10.16A4 4 0 1 1 16 12a4 4 0 0 1-4 4zm6.41-10.4a1.44 1.44 0 1 1-1.44-1.44 1.44 1.44 0 0 1 1.44 1.44z"/></svg></a><a href="https://www.facebook.com/profile.php?id=61591242009330" target="_blank" rel="noopener" class="fb" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg></a><a href="https://www.linkedin.com/company/cfg-seguros" target="_blank" rel="noopener" class="ln" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zm7 0h3.83v1.64h.05a4.2 4.2 0 0 1 3.78-2.08c4.04 0 4.79 2.66 4.79 6.12V21h-4v-5.4c0-1.29-.02-2.95-1.8-2.95-1.8 0-2.07 1.4-2.07 2.85V21h-4z"/></svg></a><a href="https://www.tiktok.com/@cfgsegurosgg" target="_blank" rel="noopener" class="tt" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M16.6 5.82A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 1 1-1.81-2.47V9.77a5.68 5.68 0 1 0 4.9 5.63V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3a4.3 4.3 0 0 1-3.24-1.48z"/></svg></a></div><p><a href="mailto:info@cfg-seguros.com">info@cfg-seguros.com</a></p><p style="margin-top:.3rem;font-size:.7rem;color:#334155">CFG-Seguros &copy; 2026</p></div></footer>
 
