@@ -52,3 +52,19 @@ http://www.cfg-seguros.com/* https://cfg-seguros.com/:splat 301
 /estudiantes /estudiantes/ 301
 /extranjeros /extranjeros/ 301
 /mayores-65 /mayores-65/ 301
+
+# === Anadido 18-oct-2026 (SEO: duplicados y 404) ===
+# Articulo duplicado de seguros obligatorios -> se queda el largo
+/blog/autonomos-seguros-obligatorios-2026 /blog/seguros-obligatorios-autonomos-2026 301
+/blog/autonomos-seguros-obligatorios-2026/ /blog/seguros-obligatorios-autonomos-2026 301
+/blog/autonomos-seguros-obligatorios-2026.html /blog/seguros-obligatorios-autonomos-2026 301
+# Articulos del blog con .html -> sin extension (evita duplicados)
+/blog/*.html /blog/:splat 301
+# Paginas legales sin barra -> con barra (canonical)
+/aviso-legal /aviso-legal/ 301
+/privacidad /privacidad/ 301
+/cookies /cookies/ 301
+# Restos antiguos
+/blog.html /blog/ 301
+/articulos/* /blog/ 301
+/descargar.html / 301
