@@ -61,9 +61,6 @@ http://www.cfg-seguros.com/* https://cfg-seguros.com/:splat 301
 # Articulos del blog con .html -> sin extension (evita duplicados)
 /blog/*.html /blog/:splat 301
 # Paginas legales sin barra -> con barra (canonical)
-/aviso-legal /aviso-legal/ 301
-/privacidad /privacidad/ 301
-/cookies /cookies/ 301
 # Restos antiguos
 /blog.html /blog/ 301
 /articulos/* /blog/ 301
