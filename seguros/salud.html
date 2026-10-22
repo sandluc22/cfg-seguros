@@ -144,6 +144,16 @@ footer a{color:#0a66c2}
 .grid-perfiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;margin-top:1.2rem}
 .perfil{background:#F7FAFD;border:1px solid #D6DFEA;border-radius:12px;padding:1rem 1.1rem}
 .perfil h3{margin:0 0 .4rem;font-size:1.02rem;color:#0F2944}
+.grid-polizas{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:1.1rem;margin-top:1.4rem}
+.poliza{background:#fff;border:1px solid #D6DFEA;border-radius:14px;padding:1.2rem 1.2rem 1.3rem;display:flex;flex-direction:column}
+.poliza h3{margin:.5rem 0 .4rem;font-size:1.15rem;color:#0F2944}
+.poliza .para{margin:0 0 .7rem;font-size:.93rem;line-height:1.55;color:#475569}
+.poliza ul{list-style:none;padding:0;margin:0 0 .7rem}
+.poliza ul li{padding:.28rem 0 .28rem 1.3rem;position:relative;font-size:.9rem;line-height:1.45;color:#334155}
+.poliza ul li:before{content:"\2713";position:absolute;left:0;color:#0079c8;font-weight:800}
+.poliza .ojo{font-size:.85rem;color:#64748b;font-style:italic;margin:0 0 .9rem;border-top:1px dashed #dbe3ec;padding-top:.6rem}
+.tag{display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.4px;padding:.22rem .6rem;border-radius:999px;text-transform:uppercase}
+.tag.copago{background:#FFF3DE;color:#8A5300}
 .perfil p{margin:0;font-size:.94rem;line-height:1.6;color:#334155}
 </style>
 <script type="application/ld+json">{
@@ -314,6 +324,38 @@ footer a{color:#0a66c2}
   <div class="container">
     <h2>Pólizas Sanitas</h2>
     <p class="lead">Todas las modalidades de salud de Sanitas, resumidas en un vistazo. Toca el nombre de cada póliza para ver toda la información y pedir tu precio.</p>
+
+    <div class="grid-polizas">
+      <article class="poliza">
+        <span class="tag copago">Con copago</span>
+        <h3>Sanitas Accede</h3>
+        <p class="para">La puerta de entrada a Sanitas: cuota baja y un copago fijo cada vez que usas el médico.</p>
+        <ul>
+          <li><strong>Sin carencias</strong>: cubierto desde el primer día</li>
+          <li>Copago con <strong>tope máximo de 290 € al año</strong></li>
+          <li>Consulta, pruebas simples, urgencias, podología y dental básico</li>
+          <li>Videoconsulta y video-urgencias sin copago</li>
+          <li>Cuestionario de salud muy corto</li>
+        </ul>
+        <p class="ojo">Encaja si quieres pagar poco al mes y estar cubierto desde ya.</p>
+        <a class="btn-perfil" href="#contacto">Pedir precio</a>
+      </article>
+
+      <article class="poliza">
+        <span class="tag copago">Con copago</span>
+        <h3>Sanitas Avanza</h3>
+        <p class="para">Un paso más que Accede: añade pruebas complejas y cirugía sin necesidad de ingreso.</p>
+        <ul>
+          <li><strong>Con carencias</strong>: cirugía a los 3 meses, pruebas complejas a los 6</li>
+          <li>Copago con <strong>tope máximo de 350 € al año</strong></li>
+          <li>Pruebas simples y complejas</li>
+          <li>Más de 400 intervenciones sin hospitalizar</li>
+          <li>Videoconsulta incluida</li>
+        </ul>
+        <p class="ojo">Encaja si quieres cirugía sin ingreso y puedes esperar las carencias.</p>
+        <a class="btn-perfil" href="#contacto">Pedir precio</a>
+      </article>
+    </div>
 
 <!-- COBERTURA -->
 <section class="bloque">
