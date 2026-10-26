@@ -62,6 +62,5 @@ http://www.cfg-seguros.com/* https://cfg-seguros.com/:splat 301
 /blog/*.html /blog/:splat 301
 # Paginas legales sin barra -> con barra (canonical)
 # Restos antiguos
-/blog.html /blog/ 301
 /articulos/* /blog/ 301
 /descargar.html / 301
