@@ -1,0 +1,40 @@
+<html><head><meta charset="utf-8"><style>
+body{font-family:Arial,sans-serif;background:#f1f5f9;padding:24px;color:#1e293b}
+h1{font-size:20px;color:#0a2a4a;margin:0 0 4px}
+p.sub{font-size:12px;color:#64748b;margin:0 0 20px}
+.card{background:#fff;border-radius:12px;padding:16px;margin-bottom:14px}
+.card h2{font-size:15px;margin:0 0 10px}
+.ok{border-left:5px solid #16a34a}.bad{border-left:5px solid #dc2626}
+.tag{display:inline-block;font-size:11px;font-weight:bold;padding:3px 9px;border-radius:20px;color:#fff}
+.tok{background:#16a34a}.tbad{background:#dc2626}
+table{width:100%;border-collapse:collapse;font-size:12px;margin-top:8px}
+td{padding:5px 4px;border-bottom:1px solid #e2e8f0}
+td.k{color:#64748b;width:40%}
+.note{font-size:12px;color:#334155;background:#fef3c7;padding:10px;border-radius:6px}
+</style></head><body>
+<h1>Comprobacion de las dos webs</h1>
+<p class="sub">Hecho hoy, 8 nov 2026 - datos de Google Safe Browsing y de la propia web</p>
+<div class="card ok">
+<h2>cfg-seguros.com <span class="tag tok">LIMPIA</span></h2>
+<table>
+<tr><td class="k">Codigo Safe Browsing</td><td>2 - sin amenazas</td></tr>
+<tr><td class="k">Estado HTTP</td><td>200 OK</td></tr>
+<tr><td class="k">HTTPS</td><td>correcto</td></tr>
+<tr><td class="k">Creada</td><td>14-jul-2026 - Cloudflare</td></tr>
+</table>
+<p style="font-size:12px;margin:10px 0 0">Esta es la tuya. No tiene nada malo.</p>
+</div>
+<div class="card bad">
+<h2>rg-seguros.com <span class="tag tbad">PELIGROSA</span></h2>
+<table>
+<tr><td class="k">Codigo Safe Browsing</td><td>6 - PHISHING detectado</td></tr>
+<tr><td class="k">Contenido</td><td>redireccion vacia a /lander</td></tr>
+<tr><td class="k">Que es</td><td>dominio aparcado por un estafador</td></tr>
+<tr><td class="k">Creada</td><td>14-mar-2016 - GoDaddy</td></tr>
+<tr><td class="k">Relacion con Sandra</td><td>NINGUNA</td></tr>
+</table>
+</div>
+<p class="note"><b>Conclusion:</b> el aviso rojo sale por rg-seguros.com, que se escribe sin la cf.
+Es de otra persona desde 2016 y esta infectada. Tu web, cfg-seguros.com, esta perfecta.
+Lo que hay que corregir es la direccion que se esta usando, no la web.</p>
+</body></html>
