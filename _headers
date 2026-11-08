@@ -34,3 +34,13 @@
 /sanitas_material/*
   X-Robots-Tag: noindex, nofollow
   X-Frame-Options: DENY
+
+# --- Bloquear carpetas internas y de respaldo (no servir nunca) ---
+/_borrados*/*
+  X-Robots-Tag: noindex, nofollow
+  X-Frame-Options: DENY
+  Content-Type: text/plain
+
+/*.bak*
+  X-Robots-Tag: noindex, nofollow
+  Content-Type: text/plain
