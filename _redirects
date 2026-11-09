@@ -1,19 +1,20 @@
 # Redirigir URLs sin extensión y con guiones a las oficiales
-/seguro-vida.html /seguros/vida 301
-/seguro-vida/ /seguros/vida 301
-/seguro-coche.html /seguros/coche 301
-/seguro-coche/ /seguros/coche 301
-/seguro-salud.html /seguros/salud 301
-/seguro-salud/ /seguros/salud 301
-/seguro-empresas.html /seguros/empresas 301
-/seguro-empresas/ /seguros/empresas 301
-/seguro-ahorro-inversion.html /seguros/ahorro-inversion 301
-/seguro-ahorro-inversion/ /seguros/ahorro-inversion 301
-/seguro-hogar.html /seguros/hogar 301
-/seguro-hogar/ /seguros/hogar 301
+/seguro-vida.html /seguros/vida 410
+/seguro-vida/ /seguros/vida 410
+/seguro-coche.html /seguros/coche 410
+/seguro-coche/ /seguros/coche 410
+/seguro-salud.html /seguros/salud 410
+/seguro-salud/ /seguros/salud 410
+/seguro-empresas.html /seguros/empresas 410
+/seguro-empresas/ /seguros/empresas 410
+/seguro-ahorro-inversion.html /seguros/ahorro-inversion 410
+/seguro-ahorro-inversion/ /seguros/ahorro-inversion 410
+/seguro-hogar.html /seguros/hogar 410
+/seguro-hogar/ /seguros/hogar 410
 
 # Redirigir versiones con .html de seguros/ a sin extensión
-/seguros/*.html /seguros/:splat 301
+# 9-nov-2026: paginas .html viejas de seguros ya no existen -> 410 Gone
+/seguros/*.html /seguros/ 410
 
 # Redirigir sobre-mi
 /sobre-mi.html / 301
@@ -34,7 +35,7 @@ http://www.cfg-seguros.com/* https://cfg-seguros.com/:splat 301
 /seguros/salud.html.bak-20260917-114501 /seguros/salud 301
 
 # Listado de blog antiguo (duplicado) → blog actual
-/blog.html /blog/ 301
+/blog.html /blog/ 410
 
 # Página de contacto antigua (ya es sección en home)
 /contacto.html /#contacto 301
@@ -59,8 +60,13 @@ http://www.cfg-seguros.com/* https://cfg-seguros.com/:splat 301
 /blog/autonomos-seguros-obligatorios-2026/ /blog/seguros-obligatorios-autonomos-2026 301
 /blog/autonomos-seguros-obligatorios-2026.html /blog/seguros-obligatorios-autonomos-2026 301
 # Articulos del blog con .html -> sin extension (evita duplicados)
-/blog/*.html /blog/:splat 301
+# 9-nov-2026: articulos viejos .html ya no existen -> 410 Gone (Google los saca del indice en semanas)
+/blog/*.html /blog/ 410
 # Paginas legales sin barra -> con barra (canonical)
 # Restos antiguos
 /articulos/* / 301
 /descargar.html / 410
+
+# 9-nov-2026: listados de blog antiguos -> 410
+/blog/index /blog/ 410
+/blog/index.html /blog/ 410
