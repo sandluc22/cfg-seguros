@@ -156,9 +156,13 @@ footer a{color:#0a66c2}
 .tag.copago{background:#FFF3DE;color:#8A5300}
 .perfil p{margin:0;font-size:.94rem;line-height:1.6;color:#334155}
 </style>
-<script type="application/ld+json">{
+<script type="application/ld+json">
+{
   "@context": "https://schema.org",
-  "@type": "HealthInsurance",
+  "@type": [
+    "HealthInsurance",
+    "InsuranceAgency"
+  ],
   "name": "CFG Seguros - Agente exclusiva Sanitas",
   "description": "Seguro de salud Sanitas en España para familias, autónomos, profesionales, estudiantes y residentes. Todas las pólizas de salud.",
   "url": "https://cfg-seguros.com/seguros/salud",
@@ -167,7 +171,7 @@ footer a{color:#0a66c2}
     "@type": "Organization",
     "name": "Sanitas"
   },
-  "dateModified": "2026-10-18",
+  "dateModified": "2026-11-21",
   "datePublished": "2026-10-18"
 }
 </script>
@@ -179,22 +183,42 @@ footer a{color:#0a66c2}
     {
       "@type": "Question",
       "name": "¿Qué seguro de salud necesito para el visado de estudiante en España?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Necesitas un seguro médico sin copagos ni carencias, válido para todo el periodo de estudios y con cobertura de repatriación. El seguro de salud Sanitas que gestiono cumple los requisitos del consulado y se puede contratar desde tu país antes de la solicitud del visado." }
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Necesitas un seguro médico sin copagos ni carencias, válido para todo el periodo de estudios y con cobertura de repatriación. El seguro de salud Sanitas que gestiono cumple los requisitos del consulado y se puede contratar desde tu país antes de la solicitud del visado."
+      }
     },
     {
       "@type": "Question",
       "name": "¿Puedo contratar el seguro de salud Sanitas si todavía no estoy en España?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Sí. El seguro Sanitas se puede contratar a distancia, sin necesidad de estar todavía en España, y el pago se realiza por tarjeta o transferencia bancaria. Después recibes el certificado válido para el visado." }
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. El seguro Sanitas se puede contratar a distancia, sin necesidad de estar todavía en España, y el pago se realiza por tarjeta o transferencia bancaria. Después recibes el certificado válido para el visado."
+      }
     },
     {
       "@type": "Question",
       "name": "¿Qué diferencia hay entre Sanitas Residentes y Sanitas Estudiantes?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Sanitas Estudiantes está pensado para estudiantes extranjeros y su visado de estudios, y Sanitas Residentes para residencia, reagrupación familiar o nómada digital. Ambos son sin copagos ni carencias, pero las condiciones y edades varían según el tramo." }
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sanitas Estudiantes está pensado para estudiantes extranjeros y su visado de estudios, y Sanitas Residentes para residencia, reagrupación familiar o nómada digital. Ambos son sin copagos ni carencias, pero las condiciones y edades varían según el tramo."
+      }
     },
     {
       "@type": "Question",
       "name": "¿Cuánto cuesta un seguro de salud Sanitas para extranjeros en España?",
-      "acceptedAnswer": { "@type": "Answer", "text": "El precio depende del tramo de edad y del producto (estudiantes, residents o nómada digital). Se calcula de forma personalizada según cada caso; puedes solicitar un presupuesto." }
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El precio depende del tramo de edad y del producto (estudiantes, residents o nómada digital). Se calcula de forma personalizada según cada caso; puedes solicitar un presupuesto."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Hay periodos de carencia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Las pólizas de salud Sanitas que gestiono se contratan sin carencias en las coberturas habituales. Algunas coberturas concretas (como el parto) sí tienen periodo de espera, y te lo indico antes de firmar."
+      }
     }
   ]
 }
